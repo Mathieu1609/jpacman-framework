@@ -14,14 +14,14 @@ import nl.tudelft.jpacman.level.LevelFactory;
 import nl.tudelft.jpacman.level.MapParser;
 import nl.tudelft.jpacman.level.Player;
 import nl.tudelft.jpacman.level.PlayerFactory;
+import nl.tudelft.jpacman.multiplayers.ChoiceMonster;
+import nl.tudelft.jpacman.multiplayers.Classement;
+import nl.tudelft.jpacman.multiplayers.Joueur;
 import nl.tudelft.jpacman.npc.ghost.GhostFactory;
 import nl.tudelft.jpacman.sprite.PacManSprites;
 import nl.tudelft.jpacman.ui.Action;
 import nl.tudelft.jpacman.ui.PacManUI;
 import nl.tudelft.jpacman.ui.PacManUiBuilder;
-import CraeyeMathieu.ChoiceMonster;
-import CraeyeMathieu.Classement;
-import CraeyeMathieu.Joueur;
 
 /**
  * Creates and launches the JPacMan UI.
@@ -32,7 +32,7 @@ public class Launcher {
 
 	private static final PacManSprites SPRITE_STORE = new PacManSprites();
 	public static ChoiceMonster cM;
-	private PacManUI pacManUI;
+	public PacManUI pacManUI;
 	private Game game;
 
 	/**

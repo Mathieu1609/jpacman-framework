@@ -6,12 +6,22 @@ import java.util.Map;
 import nl.tudelft.jpacman.board.Board;
 import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Square;
+import nl.tudelft.jpacman.fruit.Fish;
+import nl.tudelft.jpacman.fruit.Pepper;
+import nl.tudelft.jpacman.fruit.Pomegranate;
+import nl.tudelft.jpacman.fruit.Potato;
+import nl.tudelft.jpacman.fruit.Tomato;
 import nl.tudelft.jpacman.npc.NPC;
 import nl.tudelft.jpacman.npc.ghost.Ghost;
 import nl.tudelft.jpacman.npc.ghost.GhostColor;
 import nl.tudelft.jpacman.npc.ghost.GhostFactory;
+import nl.tudelft.jpacman.specialcase.Bridge;
+import nl.tudelft.jpacman.specialcase.SpecialSquare;
+import nl.tudelft.jpacman.specialcase.Teleporter;
+import nl.tudelft.jpacman.specialcase.Trap;
 import nl.tudelft.jpacman.sprite.PacManSprites;
 import nl.tudelft.jpacman.sprite.Sprite;
+
 
 /**
  * Factory that creates levels and units.
@@ -54,7 +64,8 @@ public class LevelFactory {
 	 * @param ghostFactory
 	 *            The factory providing ghosts.
 	 */
-	public LevelFactory(PacManSprites spriteStore, GhostFactory ghostFactory) {
+	public LevelFactory(PacManSprites spriteStore, GhostFactory ghostFactory) 
+	{
 		this.sprites = spriteStore;
 		this.ghostIndex = -1;
 		this.ghostFact = ghostFactory;
@@ -71,8 +82,8 @@ public class LevelFactory {
 	 *            A list of squares from which players may start the game.
 	 * @return A new level for the board.
 	 */
-	public Level createLevel(Board board, List<NPC> ghosts,
-			List<Square> startPositions) {
+	public Level createLevel(Board board, List<NPC> ghosts,List<Square> startPositions) 
+	{
 
 		// We'll adopt the simple collision map for now.
 		CollisionMap collisionMap = new PlayerCollisions();
@@ -85,10 +96,12 @@ public class LevelFactory {
 	 * 
 	 * @return The new ghost.
 	 */
-	NPC createGhost() {
+	NPC createGhost() 
+	{
 		ghostIndex++;
 		ghostIndex %= GHOSTS;
-		switch (ghostIndex) {
+		switch (ghostIndex)
+		{
 		case BLINKY:
 			return ghostFact.createBlinky();
 		case INKY:
@@ -107,9 +120,97 @@ public class LevelFactory {
 	 * 
 	 * @return The new pellet.
 	 */
-	public Pellet createPellet() {
+	public Pellet createPellet() 
+	{
 		return new Pellet(PELLET_VALUE, sprites.getPelletSprite());
 	}
+	
+	/**
+	 * Creates a new Pellet
+	 * 
+	 * @return the new Pomegranate
+	 */
+	
+	public Pellet createPommegranate()
+	{
+		return new Pomegranate(0,sprites.getPomegranateSprite());
+	}
+	
+	/**
+	 * Creates a new Pellet
+	 * 
+	 * @return the new Pepper
+	 */
+	
+	public Pellet createPepper()
+	{
+		return new Pepper(0,sprites.getPepperSprite());
+	}
+	
+	/**
+	 * Creates a new Pellet
+	 * 
+	 * @return the new Potato
+	 */
+	
+	public Pellet createPotato()
+	{
+		return new Potato(0,sprites.getPotatoSprite());
+	}
+	
+	/**
+	 * Creates a new Pellet
+	 * 
+	 * @return the new Tomato
+	 */
+	
+	public Pellet createTomato()
+	{
+		return new Tomato(0,sprites.getTomatoSprite());
+	}
+	
+	/**
+	 * Creates a new Pellet
+	 * 
+	 * @return the new Fish
+	 */
+	
+	public Pellet createFish()
+	{
+		return new Fish(0,sprites.getFishSprite());
+	}
+	
+	/**
+	 * Creates a SpecialSquare
+	 * 
+	 * @return the new Trap
+	 */
+	
+	public SpecialSquare createTrap()
+	{
+		return new Trap(sprites.getTrapSprite());
+	}
+	
+	/**
+	 * Creates a SpecialSquare
+	 * 
+	 * @return the new Teleporter
+	 */
+	public SpecialSquare createTeleporter()
+	{
+		return new Teleporter(sprites.getTeleporterSprite());
+	}
+	
+	/**
+	 * Creates a SpecialSquare
+	 * @return  the New Bridge
+	 */
+	
+	public SpecialSquare createBridge()
+	{
+		return new Bridge(sprites.getBridgeSprite());
+	}
+	
 
 	/**
 	 * Implementation of an NPC that wanders around randomly.
@@ -131,6 +232,8 @@ public class LevelFactory {
 		 */
 		private RandomGhost(Map<Direction, Sprite> ghostSprite) {
 			super(ghostSprite);
+			this.isDead=false;
+			this.trap=false;
 		}
 
 		@Override
@@ -142,5 +245,6 @@ public class LevelFactory {
 		public Direction nextMove() {
 			return randomMove();
 		}
+
 	}
 }

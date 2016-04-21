@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import CraeyeMathieu.Classement;
 import nl.tudelft.jpacman.PacmanConfigurationException;
 import nl.tudelft.jpacman.board.Direction;
+import nl.tudelft.jpacman.multiplayers.Classement;
 import nl.tudelft.jpacman.npc.ghost.GhostColor;
 
 /**
@@ -100,14 +100,13 @@ public class PacManSprites extends SpriteStore {
 	 *            The colour of the ghost.
 	 * @return The Sprite for the ghost.
 	 */
-	public Map<Direction, Sprite> getGhostSprite(GhostColor color) {
+	public Map<Direction, Sprite> getGhostSprite(GhostColor color) 
+	{
 		assert color != null;
-
-		String resource = "/sprite/ghost_" + color.name().toLowerCase()
-				+ ".png";
+		String resource = "/sprite/ghost_" + color.name().toLowerCase()+ ".png";			
 		return directionSprite(resource, GHOST_ANIMATION_FRAMES);
 	}
-
+	
 	/**
 	 * @return The sprite for the wall.
 	 */
@@ -123,11 +122,83 @@ public class PacManSprites extends SpriteStore {
 	}
 
 	/**
-	 * @return The sprite for the
+	 * @return The sprite for the pellet
 	 */
 	public Sprite getPelletSprite() {
 		return loadSprite("/sprite/pellet.png");
 	}
+	/**
+	 * @return The sprite for the pomegranate
+	 */
+	public Sprite getPomegranateSprite()
+	{
+		return loadSprite("/sprite/pomegranate.png");
+	}
+	
+	/**
+	 * @return The sprite for the pepper
+	 */
+	
+	public Sprite getPepperSprite()
+	{
+		return loadSprite("/sprite/pepper.png");
+	}
+	
+	/**
+	 * @return The sprite for the potato
+	 */
+	
+	public Sprite getPotatoSprite()
+	{
+		return loadSprite("/sprite/potato.png");
+	}
+	
+	/**
+	 * @return The sprite for the tomato
+	 */
+	
+	public Sprite getTomatoSprite()
+	{
+		return loadSprite("/sprite/tomato.png");
+	}
+	
+	/**
+	 * @return The sprite for the fish
+	 */
+	
+	public Sprite getFishSprite()
+	{
+		return loadSprite("/sprite/fish.png");
+	}
+	
+	/**
+	 * @return The sprite for the bridge
+	 */
+	
+	public Sprite getBridgeSprite()
+	{
+		return loadSprite("/sprite/bridge.png");
+	}
+	
+	/**
+	 * @return The sprite for the teleporter
+	 */
+	
+	public Sprite getTeleporterSprite()
+	{
+		return loadSprite("/sprite/teleporter.png");
+	}
+	
+	/**
+	 * @return The sprite for the trap
+	 */
+	
+	public Sprite getTrapSprite()
+	{
+		return loadSprite("/sprite/trap.png");
+	}
+	
+	
 
 	/**
 	 * Overloads the default sprite loading, ignoring the exception. This class

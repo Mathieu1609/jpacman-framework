@@ -11,6 +11,7 @@ import nl.tudelft.jpacman.PacmanConfigurationException;
 import nl.tudelft.jpacman.board.Board;
 import nl.tudelft.jpacman.board.BoardFactory;
 import nl.tudelft.jpacman.board.Square;
+import nl.tudelft.jpacman.fruit.Pomegranate;
 import nl.tudelft.jpacman.npc.NPC;
 
 /**
@@ -38,7 +39,8 @@ public class MapParser {
 	 * @param boardFactory
 	 *            The factory providing the Square objects and the board.
 	 */
-	public MapParser(LevelFactory levelFactory, BoardFactory boardFactory) {
+	public MapParser(LevelFactory levelFactory, BoardFactory boardFactory)
+	{
 		this.levelCreator = levelFactory;
 		this.boardCreator = boardFactory;
 	}
@@ -53,6 +55,14 @@ public class MapParser {
 	 * <li>'.' (period) a square with a pellet.
 	 * <li>'P' (capital P) a starting square for players.
 	 * <li>'G' (capital G) a square with a ghost.
+	 * <li>'q' (q) a square with a Pomegrenata.
+	 * <li>'k' (k) a square with a Pepper.
+	 * <li>'s' (s) a square with a Tomato.
+	 * <li>'v' (v) a square with a Potato.
+	 * <li>'u' (u) a square with a Fish
+	 * <li>'m' (m) a square with a Trap.
+	 * <li>'t' (t) a square with a Teleporter.
+	 * <li>'b' (q) a square with a Bridge.
 	 * </ul>
 	 * 
 	 * @param map
@@ -60,7 +70,8 @@ public class MapParser {
 	 *            representing the square at position x,y.
 	 * @return The level as represented by this text.
 	 */
-	public Level parseMap(char[][] map) {
+	public Level parseMap(char[][] map) 
+	{
 		int width = map.length;
 		int height = map[0].length;
 
@@ -75,9 +86,10 @@ public class MapParser {
 		return levelCreator.createLevel(board, ghosts, startPositions);
 	}
 
-	private void makeGrid(char[][] map, int width, int height,
-			Square[][] grid, List<NPC> ghosts, List<Square> startPositions) {
-		for (int x = 0; x < width; x++) {
+	private void makeGrid(char[][] map, int width, int height,Square[][] grid, List<NPC> ghosts, List<Square> startPositions)			
+	{
+		for (int x = 0; x < width; x++)
+		{
 			for (int y = 0; y < height; y++) {
 				char c = map[x][y];
 				addSquare(grid, ghosts, startPositions, x, y, c);
@@ -85,9 +97,10 @@ public class MapParser {
 		}
 	}
 
-	private void addSquare(Square[][] grid, List<NPC> ghosts,
-			List<Square> startPositions, int x, int y, char c) {
-		switch (c) {
+	private void addSquare(Square[][] grid, List<NPC> ghosts,List<Square> startPositions, int x, int y, char c)			
+	{
+		switch (c)
+		{
 		case ' ':
 			grid[x][y] = boardCreator.createGround();
 			break;
@@ -108,13 +121,58 @@ public class MapParser {
 			grid[x][y] = playerSquare;
 			startPositions.add(playerSquare);
 			break;
+		case 'q':
+			Square granateSquare = boardCreator.createGround();
+			grid[x][y] = granateSquare;
+			levelCreator.createPommegranate().occupy(granateSquare);
+			break;
+		case 'k':
+			Square pepperSquare=boardCreator.createGround();
+			grid[x][y]=pepperSquare;
+			levelCreator.createPepper().occupy(pepperSquare);	
+			break;
+		case 'v':
+			Square potatoSquare=boardCreator.createGround();
+			grid[x][y]= potatoSquare;
+			levelCreator.createPotato().occupy(potatoSquare);
+			break;
+			
+		case 's':
+			Square tomatoSquare=boardCreator.createGround();
+			grid[x][y]=tomatoSquare;
+			levelCreator.createTomato().occupy(tomatoSquare);
+			break;
+			
+		case 'u':
+			Square fishSquare=boardCreator.createGround();
+			grid[x][y]=fishSquare;
+			levelCreator.createFish().occupy(fishSquare);
+			break;
+			
+		case 'm':
+			Square trapSquare= boardCreator.createGround();
+			grid[x][y]=trapSquare;
+			levelCreator.createTrap().occupy(trapSquare);
+			break;
+		case 't':
+			Square teleporterSquare= boardCreator.createGround();
+			grid[x][y]=teleporterSquare;
+			levelCreator.createTeleporter().occupy(teleporterSquare);
+			break;
+		case 'b':
+			Square bridgeSquare = boardCreator.createGround();
+			grid[x][y]=bridgeSquare;
+			levelCreator.createBridge().occupy(bridgeSquare);
+			break;
+			
 		default:
-			throw new PacmanConfigurationException("Invalid character at "
-					+ x + "," + y + ": " + c);
+			throw new PacmanConfigurationException("Invalid character at "+ x + "," + y + ": " + c);
+					
 		}
 	}
 
-	private Square makeGhostSquare(List<NPC> ghosts) {
+	private Square makeGhostSquare(List<NPC> ghosts)
+	{
 		Square ghostSquare = boardCreator.createGround();
 		NPC ghost = levelCreator.createGhost();
 		ghosts.add(ghost);
@@ -133,7 +191,8 @@ public class MapParser {
 	 * @return The level as represented by the text.
 	 * @throws PacmanConfigurationException If text lines are not properly formatted.
 	 */
-	public Level parseMap(List<String> text) {
+	public Level parseMap(List<String> text)
+	{
 		
 		checkMapFormat(text);
 
@@ -154,7 +213,8 @@ public class MapParser {
 	 * @param text Map to be checked
 	 * @throws PacmanConfigurationException if map is not OK.
 	 */
-	private void checkMapFormat(List<String> text) {	
+	private void checkMapFormat(List<String> text) 
+	{	
 		if (text == null) {
 			throw new PacmanConfigurationException(
 					"Input text cannot be null.");
@@ -190,7 +250,8 @@ public class MapParser {
 	 * @throws IOException
 	 *             when the source could not be read.
 	 */
-	public Level parseMap(InputStream source) throws IOException {
+	public Level parseMap(InputStream source) throws IOException
+	{
 		try (BufferedReader reader = new BufferedReader(new InputStreamReader(
 				source, "UTF-8"))) {
 			List<String> lines = new ArrayList<>();

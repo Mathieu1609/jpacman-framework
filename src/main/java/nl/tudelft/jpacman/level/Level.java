@@ -2,6 +2,7 @@ package nl.tudelft.jpacman.level;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -13,7 +14,12 @@ import nl.tudelft.jpacman.board.Board;
 import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Square;
 import nl.tudelft.jpacman.board.Unit;
+import nl.tudelft.jpacman.fruit.Fruit;
+import nl.tudelft.jpacman.fruit.Pepper;
+import nl.tudelft.jpacman.fruit.Pomegranate;
 import nl.tudelft.jpacman.npc.NPC;
+import nl.tudelft.jpacman.npc.ghost.Ghost;
+import nl.tudelft.jpacman.specialcase.Bridge;
 
 /**
  * A level of Pac-Man. A level consists of the board with the players and the
@@ -42,7 +48,7 @@ public class Level {
 	/**
 	 * The NPCs of this level and, if they are running, their schedules.
 	 */
-	private final Map<NPC, ScheduledExecutorService> npcs;
+	private  Map<NPC, ScheduledExecutorService> npcs;
 
 	/**
 	 * <code>true</code> iff this level is currently in progress, i.e. players
@@ -74,6 +80,10 @@ public class Level {
 	 * The objects observing this level.
 	 */
 	private final List<LevelObserver> observers;
+	
+	private float coefficientVitesse;
+
+	
 
 	/**
 	 * Creates a new level for the board.
@@ -104,6 +114,7 @@ public class Level {
 		this.players = new ArrayList<>();
 		this.collisions = collisionMap;
 		this.observers = new ArrayList<>();
+		this.coefficientVitesse=1;
 	}
 
 	/**
@@ -144,8 +155,9 @@ public class Level {
 		if (players.contains(p)) {
 			return;
 		}
+		p.setSpawn(startSquares.get(startSquareIndex));
 		players.add(p);
-		Square square = startSquares.get(startSquareIndex);
+		Square square= p.getSpawn();
 		p.occupy(square);
 		startSquareIndex++;
 		startSquareIndex %= startSquares.size();
@@ -169,29 +181,214 @@ public class Level {
 	 * @param direction
 	 *            The direction to move the unit in.
 	 */
-	public void move(Unit unit, Direction direction) {
+	public void move(Unit unit, Direction direction) 
+	{
 		assert unit != null;
 		assert direction != null;
 
-		if (!isInProgress()) {
+		if (!isInProgress())
+		{
 			return;
 		}
+		if(unit instanceof Player)
+		{
+			if((((Player)unit).isInvisible())||(((Player)unit).isStun()))
+		    {
+			 if(((Fruit) ((Player)unit).getEffect()).check())
+			 {
+				((Player)unit).resetEffect();
+			 }
+		    }
+		}
+		if((unit instanceof Ghost)&&((Ghost)unit).isTrap())
+		{
+			((Ghost)unit).check();
+		
+		}
+		
+		
 
-		synchronized (moveLock) {
+		synchronized (moveLock) 
+		{
 			unit.setDirection(direction);
 			Square location = unit.getSquare();
 			Square destination = location.getSquareAt(direction);
+			Object researchBridge=unit.checkOnBridge(location);
+			
+			if(researchBridge instanceof Bridge)
+			{
+				Bridge bridge= (Bridge) researchBridge;
+				String position= bridge.getEnterDirection(unit);
+				switch (direction)
+				{
+				case EAST:
+					if(position.equals("before"))
+					{
+						destination=location;
+					}else
+					{
+						bridge.removeUnit(unit);
+						if(unit instanceof Player)
+						{
+							((Player)unit).addPoints(10);
+						}
+					}
 
-			if (destination.isAccessibleTo(unit)) {
+					break;
+				case WEST:
+					if(position.equals("before"))
+					{
+						destination=location;
+						
+					}
+					else
+					{
+						bridge.removeUnit(unit);
+						if(unit instanceof Player)
+						{
+							((Player)unit).addPoints(10);
+						}
+					}
+					break;
+					
+				case NORTH:
+					if(position.equals("behind"))
+					{
+						destination=location;
+						
+					}
+					else
+					{
+						bridge.removeUnit(unit);
+					
+					
+					}
+					
+					break;
+				case SOUTH:
+					if(position.equals("behind"))
+					{
+						destination=location;
+						
+					}
+					else
+					{
+						bridge.removeUnit(unit);
+					}
+					
+					break;
+				
+				}
+			
+			}
+			
+			
+			if((unit instanceof Player)&&((Player)unit).isStun())
+			{
+				destination=location;
+			}
+			if((unit instanceof Ghost)&&((Ghost)unit).isTrap())
+			{
+				destination=location;
+			}
+
+			if (destination.isAccessibleTo(unit))
+			{
 				List<Unit> occupants = destination.getOccupants();
 				unit.occupy(destination);
-				for (Unit occupant : occupants) {
+				for (Unit occupant : occupants)
+				{
 					collisions.collide(unit, occupant);
+					if((occupant instanceof Fruit)&&(unit instanceof Player))
+					{
+						fruitEffect(occupant,unit.getSquare());
+					}
 				}
 			}
 			updateObservers();
 		}
 	}
+	
+	
+	
+	/**
+	 * performs the effect according to the fruit
+	 * @param fruit  CollisionFruit
+	 * @param unit Destination square
+	 */
+	public void fruitEffect(Unit fruit,Square unit)
+	{
+		players.get(0).defineEffect((Fruit) fruit);
+		
+		switch(fruit.getClass().getSimpleName())
+		{
+		case "Pomegranate":	
+			
+			int abscisseUnit= board.getAbscisseSquare(unit);
+			int ordonneUnit= board.getOrdonneSquare(unit);
+			
+			for ( NPC npc : npcs.keySet())
+			{
+				
+				Square location=npc.getSquare();	
+			    int abscisseNpc=board.getAbscisseSquare(location);
+			    int ordonneNpc=board.getOrdonneSquare(location);
+			    
+			
+			   if(((Pomegranate)fruit).isClose(abscisseUnit, ordonneUnit, abscisseNpc, ordonneNpc)) 
+			   {
+				   npc.dead();
+			   }
+
+			}
+			players.get(0).resetEffect();
+		break;
+		
+		case "Pepper":
+					if(this.coefficientVitesse!=1)
+					{
+						this.coefficientVitesse=1;
+					}
+					else
+					{
+						this.coefficientVitesse=1.4f;
+				        ((Fruit)fruit).activate();
+				       				 
+					}
+				
+		break;
+		
+		case "Tomato":
+					players.get(0).setInvisible(true);
+					((Fruit) players.get(0).getEffect()).activate();
+		break;
+		
+		case "Bean":
+		break;
+		
+		case "Potato":
+			if(this.coefficientVitesse!=1)
+			{
+				this.coefficientVitesse=1;
+			}
+			else
+			{
+			this.coefficientVitesse=0.7f;
+			((Fruit)fruit).activate();
+			}
+			
+		break;		
+		case "Fish":
+			players.get(0).setStun(true);
+			((Fruit) players.get(0).getEffect()).activate();
+		break;
+		
+		default:
+		break;
+		}
+	}
+
+	
 
 	/**
 	 * Starts or resumes this level, allowing movement and (re)starting the
@@ -213,7 +410,8 @@ public class Level {
 	 * and stopping all NPCs.
 	 */
 	public void stop() {
-		synchronized (startStopLock) {
+		synchronized (startStopLock) 
+		{
 			if (!isInProgress()) {
 				return;
 			}
@@ -225,12 +423,13 @@ public class Level {
 	/**
 	 * Starts all NPC movement scheduling.
 	 */
-	private void startNPCs() {
-		for (final NPC npc : npcs.keySet()) {
-			ScheduledExecutorService service = Executors
-					.newSingleThreadScheduledExecutor();
-			service.schedule(new NpcMoveTask(service, npc),
-					npc.getInterval() / 2, TimeUnit.MILLISECONDS);
+	private void startNPCs()
+	{
+		
+		for ( NPC npc : npcs.keySet())
+		{
+			ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();					
+			service.schedule(new NpcMoveTask(service, npc), ((npc.getInterval() /2)), TimeUnit.MILLISECONDS);	
 			npcs.put(npc, service);
 		}
 	}
@@ -239,8 +438,10 @@ public class Level {
 	 * Stops all NPC movement scheduling and interrupts any movements being
 	 * executed.
 	 */
-	private void stopNPCs() {
-		for (Entry<NPC, ScheduledExecutorService> e : npcs.entrySet()) {
+	private void stopNPCs()
+	{
+		for (Entry<NPC, ScheduledExecutorService> e : npcs.entrySet())
+		{
 			e.getValue().shutdownNow();
 		}
 	}
@@ -267,6 +468,8 @@ public class Level {
 		if (remainingPellets() == 0) {
 			for (LevelObserver o : observers) {
 				o.levelWon();
+				PlayerCollisions pc= new PlayerCollisions();
+				pc.changePlayer(players.get(0));
 			}
 		}
 	}
@@ -317,12 +520,12 @@ public class Level {
 		/**
 		 * The service executing the task.
 		 */
-		private final ScheduledExecutorService service;
+		private  ScheduledExecutorService service;
 
 		/**
 		 * The NPC to move.
 		 */
-		private final NPC npc;
+		private  NPC npc;
 
 		/**
 		 * Creates a new task.
@@ -335,16 +538,42 @@ public class Level {
 		private NpcMoveTask(ScheduledExecutorService s, NPC n) {
 			this.service = s;
 			this.npc = n;
+		
 		}
 
 		@Override
 		public void run() {
-			Direction nextMove = npc.nextMove();
-			if (nextMove != null) {
+					
+			if(players.get(0).getEffect() instanceof Fruit)
+			{
+				if(((Fruit)players.get(0).getEffect() ).check())
+				{
+					coefficientVitesse=1;
+					players.get(0).resetEffect();
+					players.get(0).resetEffect();
+				}
+			}
+			
+		
+			if(npc.isDead()==false)
+			{
+					Direction nextMove = npc.nextMove();
+			if (nextMove != null)
+			{
 				move(npc, nextMove);
 			}
-			long interval = npc.getInterval();
+			long interval =(long) (npc.getInterval()*coefficientVitesse);
 			service.schedule(this, interval, TimeUnit.MILLISECONDS);
+			}
+			else
+			{
+				npc.leaveSquare();
+			}
+		
+				
+	
+			
+			
 		}
 	}
 

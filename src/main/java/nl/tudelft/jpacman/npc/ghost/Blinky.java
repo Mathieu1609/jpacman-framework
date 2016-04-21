@@ -7,6 +7,7 @@ import java.util.Random;
 import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Square;
 import nl.tudelft.jpacman.level.Player;
+import nl.tudelft.jpacman.sprite.EmptySprite;
 import nl.tudelft.jpacman.sprite.Sprite;
 
 /**
@@ -59,7 +60,12 @@ public class Blinky extends Ghost {
 	 */
 	public Blinky(Map<Direction, Sprite> spriteMap) {
 		super(spriteMap);
+		
 	}
+	
+
+	
+	
 
 	@Override
 	public long getInterval() {
@@ -102,4 +108,6 @@ public class Blinky extends Ghost {
 		Direction d = randomMove();
 		return d;
 	}
+
+
 }

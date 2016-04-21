@@ -1,5 +1,6 @@
 package nl.tudelft.jpacman.board;
 
+import nl.tudelft.jpacman.specialcase.Bridge;
 import nl.tudelft.jpacman.sprite.Sprite;
 
 /**
@@ -30,7 +31,8 @@ public abstract class Unit {
 	 * Sets this unit to face the new direction.
 	 * @param newDirection The new direction this unit is facing.
 	 */
-	public void setDirection(Direction newDirection) {
+	public void setDirection(Direction newDirection)
+	{
 		this.direction = newDirection;
 	}
 	
@@ -38,7 +40,8 @@ public abstract class Unit {
 	 * Returns the current direction this unit is facing.
 	 * @return The current direction this unit is facing.
 	 */
-	public Direction getDirection() {
+	public Direction getDirection() 
+	{
 		return this.direction;
 	}
 	
@@ -48,7 +51,8 @@ public abstract class Unit {
 	 * @return The square this unit is currently occupying, or <code>null</code>
 	 *         if this unit is not on a square.
 	 */
-	public Square getSquare() {
+	public Square getSquare()
+	{
 		assert invariant();
 		return square;
 	}
@@ -60,10 +64,12 @@ public abstract class Unit {
 	 * @param target
 	 *            The square to occupy.
 	 */
-	public void occupy(Square target) {
+	public void occupy(Square target) 
+	{
 		assert target != null;
 		
-		if (square != null) {
+		if (square != null)
+		{
 			square.remove(this);
 		}
 		square = target;
@@ -74,8 +80,10 @@ public abstract class Unit {
 	/**
 	 * Leaves the currently occupying square, thus removing this unit from the board.
 	 */
-	public void leaveSquare() {
-		if (square != null) {
+	public void leaveSquare()
+	{
+		if (square != null)
+		{
 			square.remove(this);
 			square = null;
 		}
@@ -89,8 +97,10 @@ public abstract class Unit {
 	 *         unit listed as one of its occupiers, or if this unit is currently
 	 *         not occupying any square.
 	 */
-	protected boolean invariant() {
-		if (square != null) {
+	protected boolean invariant() 
+	{
+		if (square != null) 
+		{
 			return square.getOccupants().contains(this);
 		}
 		return true;
@@ -102,5 +112,24 @@ public abstract class Unit {
 	 * @return The sprite of this unit.
 	 */
 	public abstract Sprite getSprite();
+	
+	
+	/**
+	 * Define if the unit is on a bridge.
+	 * @param Location of unit
+	 * @return new Object if isn't on a bridge
+	 * @return Bridge id on a bridge
+	 */
+	public Object checkOnBridge(Square location)
+	{
+		for(Unit occupant: location.getOccupants())
+		{
+			if(occupant instanceof Bridge)
+			{
+				return (Bridge) occupant;
+			}
+		}
+		return new Object();
+	}
 
 }

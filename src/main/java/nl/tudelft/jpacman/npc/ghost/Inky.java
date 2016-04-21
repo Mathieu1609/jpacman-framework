@@ -8,6 +8,7 @@ import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Square;
 import nl.tudelft.jpacman.board.Unit;
 import nl.tudelft.jpacman.level.Player;
+import nl.tudelft.jpacman.sprite.EmptySprite;
 import nl.tudelft.jpacman.sprite.Sprite;
 
 /**
@@ -64,7 +65,11 @@ public class Inky extends Ghost {
 	 */
 	public Inky(Map<Direction, Sprite> spriteMap) {
 		super(spriteMap);
+	
 	}
+	
+	
+	
 
 	@Override
 	public long getInterval() {
@@ -140,5 +145,10 @@ public class Inky extends Ghost {
 		return d;
 	}
 	// CHECKSTYLE:ON
+
+
+
+
+	
 
 }

@@ -2,9 +2,11 @@ package nl.tudelft.jpacman.level;
 
 import java.util.Map;
 
-import CraeyeMathieu.ChoiceMonster;
 import nl.tudelft.jpacman.board.Direction;
+import nl.tudelft.jpacman.board.Square;
 import nl.tudelft.jpacman.board.Unit;
+import nl.tudelft.jpacman.fruit.Fruit;
+import nl.tudelft.jpacman.multiplayers.ChoiceMonster;
 import nl.tudelft.jpacman.sprite.AnimatedSprite;
 import nl.tudelft.jpacman.sprite.Sprite;
 
@@ -35,6 +37,28 @@ public class Player extends Unit {
 	 * <code>true</code> iff this player is alive.
 	 */
 	private boolean alive;
+	
+	
+	/**
+	 * <code>true</code> if this player is invisible.
+	 */
+	private boolean invisible;
+	
+	/**
+	 * Effect of a player
+	 */
+	private Object effect;
+	
+	/**
+	 * Define if the player is stun
+	 */
+	private boolean stun;
+	
+	/**
+	 * Define The spawn square of the player
+	 */
+	private Square spawn;
+	
 
 	/**
 	 * Creates a new player with a score of 0 points.
@@ -51,7 +75,98 @@ public class Player extends Unit {
 		this.deathSprite = deathAnimation;
 		this.setName(name);
 		deathSprite.setAnimating(false);
+		this.invisible=false;
+		this.effect= new Object();
+		this.stun=false;
 	}
+	
+	/**
+	 * Define the effect of a player
+	 * @param fruit Fruit act as effect
+	 */
+	
+	public void defineEffect(Fruit fruit)
+	{
+		this.effect=fruit;
+	}
+	
+	/**
+	 * Reset default effect
+	 */
+	
+	public void resetEffect()
+	{
+		this.effect= new Object();
+		this.invisible=false;
+		this.stun=false;
+	}
+	
+	/**
+	 * Give current effect
+	 * @return the effect
+	 */
+	
+	public Object getEffect()
+	{
+		return effect;
+	}
+	
+	/**
+	 * Define if playr has different effect taht the default
+	 * @return true if yess, false in other way
+	 */
+	
+	public boolean isEffect()
+	{
+		if(effect instanceof Fruit)
+		{
+			return true;
+		}else
+		{
+			return false;
+		}
+	}
+	
+	/**
+	 * Define if the player is invisible.
+	 * @return true if yess, false in other way
+	 */
+	
+	public boolean isInvisible()
+	{
+		return this.invisible;
+	}
+	
+	/**
+	 * Define if the player is Stun.
+	 * @return true if yess, false in other way
+	 */
+	
+	public boolean isStun()
+	{
+		return this.stun;
+	}
+	
+	/**
+	 * Change invisible status
+	 * @param invisible_ true if invisble, false in other way
+	 */
+	
+	public void setInvisible(boolean invisible_)
+	{
+		invisible=invisible_;
+	}
+	
+	/**
+	 * Change stun status
+	 * @param stun_ true if stun, false in other way
+	 */
+	
+	public void setStun(boolean stun_)
+	{
+		stun=stun_;
+	}
+	
 
 	/**
 	 * Returns whether this player is alive or not.
@@ -107,11 +222,37 @@ public class Player extends Unit {
 		score += points;
 	}
 
-	public String getName() {
+	
+	/**
+	 * Change square spawn of the player
+	 * @param spawn_ current spawn
+	 */
+	
+	
+	public void setSpawn(Square spawn_)
+	{
+		this.spawn=spawn_;
+	}
+	
+	/**
+	 * Give spawn of the player
+	 * @return  current spawn
+	 */
+	public Square getSpawn()
+	{
+		return this.spawn;
+	}
+	
+
+
+	public String getName() 
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) 
+	{
 		this.name = name;
 	}
+
 }

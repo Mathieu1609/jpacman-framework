@@ -1,11 +1,20 @@
 package nl.tudelft.jpacman.level;
 
-import CraeyeMathieu.ChoiceMonster;
-import CraeyeMathieu.Classement;
-import nl.tudelft.jpacman.Launcher;
+
+import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Unit;
+import nl.tudelft.jpacman.fruit.Fruit;
+import nl.tudelft.jpacman.fruit.Pomegranate;
+import nl.tudelft.jpacman.Launcher;
 import nl.tudelft.jpacman.game.Game;
+import nl.tudelft.jpacman.multiplayers.ChoiceMonster;
+import nl.tudelft.jpacman.multiplayers.Classement;
 import nl.tudelft.jpacman.npc.ghost.Ghost;
+import nl.tudelft.jpacman.specialcase.Bridge;
+import nl.tudelft.jpacman.specialcase.SpecialSquare;
+import nl.tudelft.jpacman.specialcase.Teleporter;
+import nl.tudelft.jpacman.specialcase.Trap;
+import nl.tudelft.jpacman.ui.PacManUI;
 
 /**
  * A simple implementation of a collision map for the JPacman player.
@@ -20,31 +29,66 @@ import nl.tudelft.jpacman.npc.ghost.Ghost;
 
 public class PlayerCollisions implements CollisionMap {
 
+	
 	@Override
 	public void collide(Unit mover, Unit collidedOn) {
 		
-		if (mover instanceof Player) {
-			playerColliding((Player) mover, collidedOn);
-		}
-		else if (mover instanceof Ghost) {
+		if(collidedOn instanceof Bridge)
+		{
+		
+			
+			
+			if(((Bridge)collidedOn).knowUnit(mover)==false)
+			{
+				((Bridge)collidedOn).addUnit(mover);
+			}
+			
+			
+			
+		}else
+		 {
+			if (mover instanceof Player)
+		    {
+			  playerColliding((Player) mover, collidedOn);
+		     }
+		     else if (mover instanceof Ghost) 
+		     {
 			ghostColliding((Ghost) mover, collidedOn);
-		}
+		    }
+		 }	
 	}
 	
-	private void playerColliding(Player player, Unit collidedOn) {
-		if (collidedOn instanceof Ghost) {
-			playerVersusGhost(player, (Ghost) collidedOn);
+	private void playerColliding(Player player, Unit collidedOn)
+	{
+		if (collidedOn instanceof Ghost) 
+		{
+		    playerVersusGhost(player, (Ghost) collidedOn);		
 		}
 		
-		if (collidedOn instanceof Pellet) {
+		if (collidedOn instanceof Pellet) 
+		{
 			playerVersusPellet(player, (Pellet) collidedOn);
-		}		
+		}	
+		if(collidedOn instanceof Teleporter)
+		{
+			player.occupy(player.getSpawn());
+		
+		}
+		
+
 	}
 	
-	private void ghostColliding(Ghost ghost, Unit collidedOn) {
-		if (collidedOn instanceof Player) {
-			playerVersusGhost((Player) collidedOn, ghost);
+	private void ghostColliding(Ghost ghost, Unit collidedOn) 
+	{
+		if (collidedOn instanceof Player) 
+		{
+				playerVersusGhost((Player) collidedOn, ghost);		
 		}
+		if(collidedOn instanceof Trap)
+		{
+			ghost.trap(((SpecialSquare)collidedOn));
+		}
+		
 	}
 	
 	
@@ -54,38 +98,64 @@ public class PlayerCollisions implements CollisionMap {
      * @param player The player involved in the collision.
      * @param ghost The ghost involved in the collision.
 	 */
-	public void playerVersusGhost(Player player, Ghost ghost) {
-		player.setAlive(false);
-		Launcher l=new Launcher();
-		if(player.getName()=="blinky")
+
+	public void playerVersusGhost(Player player, Ghost ghost)
+	{
+		if(player.isInvisible()==false)
 		{
-			l.cM.jBlinky.setScore(player.getScore());
-			l.launch();
-		}
-		if(player.getName()=="inky")
-		{
-			l.cM.jInky.setScore(player.getScore());
-			l.launch();
-		}
-		if(player.getName()=="clyde")
-		{
-			l.cM.jClyde.setScore(player.getScore());
-			l.launch();
-		}
-		if(player.getName()=="pinky")
-		{
-			l.cM.jPinky.setScore(player.getScore());
-			l.launch();
+			if((player.checkOnBridge(player.getSquare())instanceof Bridge)&&(ghost.checkOnBridge(ghost.getSquare())instanceof Bridge))
+			{
+				Bridge playerBridge=(Bridge) player.checkOnBridge(player.getSquare());
+				Bridge ghostBridge=(Bridge) ghost.checkOnBridge(ghost.getSquare());
+				
+				
+				if(playerBridge.getEnterDirection(player).equals(ghostBridge.getEnterDirection(ghost)) )
+				{
+					player.setAlive(false);
+					changePlayer(player);
+				}
+				
+			}else
+			{
+					player.setAlive(false);
+					changePlayer(player);
+			}
 		}
 	}
 	
+	
+	public  void changePlayer(Player player)
+	{
+		Launcher l=new Launcher();
+		
+		switch(player.getName())
+		{
+		case "blinky":
+			l.cM.jBlinky.setScore(player.getScore());
+		break;
+		case "inky":
+			l.cM.jInky.setScore(player.getScore());
+		break;
+		case "clyde":
+			l.cM.jClyde.setScore(player.getScore());
+		break;
+		case "pinky":
+			l.cM.jPinky.setScore(player.getScore());
+		break;
+		
+		}
+		l.launch();
+		
+	}
+		
 	/**
 	 * Actual case of player consuming a pellet.
      *
      * @param player The player involved in the collision.
      * @param pellet The pellet involved in the collision.
 	 */
-	public void playerVersusPellet(Player player, Pellet pellet) {
+	public void playerVersusPellet(Player player, Pellet pellet) 
+	{
 		pellet.leaveSquare();
 		player.addPoints(pellet.getValue());		
 	}

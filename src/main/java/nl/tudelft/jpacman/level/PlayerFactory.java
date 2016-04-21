@@ -2,7 +2,7 @@ package nl.tudelft.jpacman.level;
 
 import java.awt.Color;
 
-import CraeyeMathieu.Joueur;
+import nl.tudelft.jpacman.multiplayers.Joueur;
 import nl.tudelft.jpacman.npc.ghost.GhostColor;
 import nl.tudelft.jpacman.sprite.PacManSprites;
 
