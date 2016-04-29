@@ -30,8 +30,8 @@ public class PlayerCollisions implements CollisionMap {
 		if(collidedOn instanceof Bridge)
 		{
 		
-			boolean knowUnit=((Bridge)collidedOn).knowUnit(mover);
-			if(knowUnit==false)
+			
+			if(((Bridge)collidedOn).knowUnit(mover))
 			{
 				((Bridge)collidedOn).addUnit(mover);
 			}
@@ -94,8 +94,8 @@ public class PlayerCollisions implements CollisionMap {
 
 	public void playerVersusGhost(Player player, Ghost ghost)
 	{
-		boolean isInvisible=player.isInvisible();
-		if(isInvisible==false)
+	
+		if(player.isInvisible())
 		{
 			if((player.checkOnBridge(player.getSquare())instanceof Bridge)&&(ghost.checkOnBridge(ghost.getSquare())instanceof Bridge))
 			{

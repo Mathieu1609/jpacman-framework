@@ -220,7 +220,7 @@ public class Level {
 				switch (direction)
 				{
 				case EAST:
-					if(position.equals("before"))
+					if("before".equals(position))
 					{
 						destination=location;
 					}else
@@ -234,7 +234,7 @@ public class Level {
 
 					break;
 				case WEST:
-					if(position.equals("before"))
+					if("before".equals(position))
 					{
 						destination=location;
 						
@@ -250,7 +250,7 @@ public class Level {
 					break;
 					
 				case NORTH:
-					if(position.equals("behind"))
+					if("behind".equals(position))
 					{
 						destination=location;
 						
@@ -264,7 +264,7 @@ public class Level {
 					
 					break;
 				case SOUTH:
-					if(position.equals("behind"))
+					if("behind".equals(position))
 					{
 						destination=location;
 						
@@ -553,8 +553,7 @@ public class Level {
 				}
 			}
 			
-			boolean isdead =npc.isDead();
-			if(isdead==false)
+			if(npc.isDead())
 			{
 					Direction nextMove = npc.nextMove();
 			if (nextMove != null)

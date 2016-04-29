@@ -8,14 +8,13 @@ import nl.tudelft.jpacman.Launcher;
 
 public class Classement extends JFrame {
 
-	private JPanel panel ;
-	private Launcher l;
+	
 	private int numeroJoueur=0;
 	
 	public void classementJoueur()
 	{
-		panel=new JPanel();
-		l=new Launcher();
+		JPanel panel=new JPanel();
+		Launcher l=new Launcher();
 		/**
 		 *  check if blinky is différent of null, if yes, create label blinky 
 		 */
