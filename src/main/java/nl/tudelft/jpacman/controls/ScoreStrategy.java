@@ -25,7 +25,8 @@ public class ScoreStrategy extends ControlStrategy{
 		Square sq = this.player.getSquare().getSquareAt(dir);
 		if (!sq.isAccessibleTo(this.player))
 			return Integer.MIN_VALUE;
-		int score = 0, dist = 1;
+		int score = 0;
+		int dist = 1;
 		if (dir == last_dir)
 			score = score + 5;
 		for (Direction direction : Direction.values())

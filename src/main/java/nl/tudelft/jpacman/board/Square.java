@@ -83,7 +83,7 @@ public abstract class Square
 	 *            The unit to occupy this square.
 	 * @return <code>true</code> iff the unit successfully occupied this square.
 	 */
-	protected boolean put(Unit occupant) 
+	boolean put(Unit occupant) 
 	{
 		assert occupant != null;
 		if (!occupants.contains(occupant)) 
@@ -100,7 +100,7 @@ public abstract class Square
 	 * @param occupant
 	 *            The unit to be removed from this square.
 	 */
-	 protected void remove(Unit occupant) 
+	 void remove(Unit occupant) 
 	{
 		assert occupant != null;
 		occupants.remove(occupant);

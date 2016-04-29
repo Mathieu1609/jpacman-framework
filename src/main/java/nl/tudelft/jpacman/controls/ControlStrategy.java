@@ -34,6 +34,8 @@ public abstract class ControlStrategy
 			return Direction.EAST;
 		case EAST:
 			return Direction.WEST;
+		default:
+			break;
 		}
 		return direction;
 	}

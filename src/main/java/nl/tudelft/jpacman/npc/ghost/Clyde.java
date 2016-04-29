@@ -61,8 +61,8 @@ public class Clyde extends Ghost {
 	 * A map of opposite directions.
 	 */
 	private static final Map<Direction, Direction> OPPOSITES = new EnumMap<Direction, Direction>(
-			Direction.class);
-	{
+			Direction.class);{
+	
 		OPPOSITES.put(Direction.NORTH, Direction.SOUTH);
 		OPPOSITES.put(Direction.SOUTH, Direction.NORTH);
 		OPPOSITES.put(Direction.WEST, Direction.EAST);

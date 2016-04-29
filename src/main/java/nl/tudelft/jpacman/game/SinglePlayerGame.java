@@ -44,6 +44,7 @@ public class SinglePlayerGame extends Game {
 		this.player = p;
 		this.level = l;
 		level.registerPlayer(p);
+		this.pacmanControls = new PlayerStrategy(this,p);
 	}
 
 	@Override
