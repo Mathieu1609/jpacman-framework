@@ -1,4 +1,4 @@
-package nl.tudelft.jpacman;
+	package nl.tudelft.jpacman;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;
@@ -175,13 +175,13 @@ public class Launcher {
 	 * Creates and starts a JPac-Man game.
 	 */
 	public void launch() {
-		new Classement().ClassementJoueur();
+		new Classement().classementJoueur();
 		game = makeGame(cM.listJ.get(cM.j.getNbrJoueur()-1));
 		PacManUiBuilder builder = new PacManUiBuilder().withDefaultButtons();
 		addSinglePlayerKeys(builder, game);
 		pacManUI = builder.build(game);
 		pacManUI.start();
-		cM.j.SetNbrJoueur(cM.j.getNbrJoueur()-1);
+		cM.j.setNbrJoueur(cM.j.getNbrJoueur()-1);
 	}
 	public void before()
 	{

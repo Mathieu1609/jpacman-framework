@@ -1,20 +1,14 @@
 package nl.tudelft.jpacman.level;
 
 
-import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Unit;
-import nl.tudelft.jpacman.fruit.Fruit;
-import nl.tudelft.jpacman.fruit.Pomegranate;
 import nl.tudelft.jpacman.Launcher;
-import nl.tudelft.jpacman.game.Game;
-import nl.tudelft.jpacman.multiplayers.ChoiceMonster;
-import nl.tudelft.jpacman.multiplayers.Classement;
 import nl.tudelft.jpacman.npc.ghost.Ghost;
 import nl.tudelft.jpacman.specialcase.Bridge;
 import nl.tudelft.jpacman.specialcase.SpecialSquare;
 import nl.tudelft.jpacman.specialcase.Teleporter;
 import nl.tudelft.jpacman.specialcase.Trap;
-import nl.tudelft.jpacman.ui.PacManUI;
+
 
 /**
  * A simple implementation of a collision map for the JPacman player.

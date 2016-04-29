@@ -1,7 +1,5 @@
 package nl.tudelft.jpacman.level;
 
-import java.awt.Color;
-
 import nl.tudelft.jpacman.multiplayers.Joueur;
 import nl.tudelft.jpacman.npc.ghost.GhostColor;
 import nl.tudelft.jpacman.sprite.PacManSprites;
@@ -13,8 +11,6 @@ import nl.tudelft.jpacman.sprite.PacManSprites;
  */
 public class PlayerFactory {
 	
-	private GhostColor color;
-
 	/**
 	 * The sprite store containing the Pac-Man sprites.
 	 */

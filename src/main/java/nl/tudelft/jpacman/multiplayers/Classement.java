@@ -1,9 +1,5 @@
 package nl.tudelft.jpacman.multiplayers;
 
-import java.awt.BorderLayout;
-import java.util.ArrayList;
-
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -12,12 +8,14 @@ import nl.tudelft.jpacman.Launcher;
 
 public class Classement extends JFrame {
 
-	ChoiceMonster cM=new ChoiceMonster();
-	JPanel panel = new JPanel();
-	Launcher l=new Launcher();
+	private JPanel panel ;
+	private Launcher l;
 	private int numeroJoueur=0;
-	public void ClassementJoueur()
+	
+	public void classementJoueur()
 	{
+		panel=new JPanel();
+		l=new Launcher();
 		/**
 		 *  check if blinky is différent of null, if yes, create label blinky 
 		 */
@@ -58,12 +56,9 @@ public class Classement extends JFrame {
 			panel.add(Joueur3);
 		}
 		
-		JLabel Winner = new JLabel("");
-		
+				
 		this.setTitle("Classement des joueurs");
 		this.setSize(700,300);
-		
-		panel.add(Winner);
 		this.setContentPane(panel);
 		this.setVisible(true);
 	}

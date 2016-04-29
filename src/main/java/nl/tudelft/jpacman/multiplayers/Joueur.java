@@ -1,6 +1,6 @@
 package nl.tudelft.jpacman.multiplayers;
 
-import java.awt.List;
+
 import java.util.ArrayList;
 
 public class Joueur {
@@ -9,7 +9,7 @@ public class Joueur {
 	private int score;
 	private String name;
 	private ArrayList<Joueur> listJoueur;
-	private int NbrJoueur;
+	private int nbrJoueur;
 	
 	public Joueur(String name_,int numero_,int score_){
 		
@@ -37,13 +37,13 @@ public class Joueur {
 	public void setListJoueur(ArrayList<Joueur> listJoueur) {
 		this.listJoueur = listJoueur;
 	}
-	public void SetNbrJoueur(int n)
+	public void setNbrJoueur(int n)
 	{
-		this.NbrJoueur=n;
+		this.nbrJoueur=n;
 	}
 	public int getNbrJoueur()
 	{
-		return NbrJoueur;
+		return nbrJoueur;
 	}
 	public void addJoueur(Joueur j)
 	{

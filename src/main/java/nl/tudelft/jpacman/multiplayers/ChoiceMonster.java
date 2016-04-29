@@ -69,7 +69,9 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	 */
 	public void Affplayer()
 	{
-		
+		if(numPlayer==0)
+			Player.setText("Joueur 1, Veuillez chosir votre monstre");
+		else
 		Player.setText("Joueur "+ numPlayer +", Veuillez chosir votre monstre");
 		
 	}
@@ -102,73 +104,73 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		Object source = e.getSource();
-
-		if(source==pinky)
+		
+		if(source.equals(pinky))
 		{
 			((JComponent) source).setVisible(false); 
-			numPlayer--;
+			numPlayer++;
 			Affplayer();
 			jPinky=new Joueur("pinky",numPlayer,0);
 			listJ.add(jPinky);
-			if (numPlayer==0)
+			if (numPlayer==j.getNbrJoueur())
 				{
 				l.launch();	this.setVisible(false);	
 				}
 		}
-		if(source==clyde)
+		if(source.equals(clyde))
 		{
 			((JComponent) source).setVisible(false); 
-			numPlayer--;
+			numPlayer++;
 			Affplayer();
 			jClyde=new Joueur("clyde",numPlayer,0);
 			listJ.add(jClyde);
-			if (numPlayer==0)
+			if (numPlayer==j.getNbrJoueur())
 			{
 			l.launch();	this.setVisible(false);	
 			}
 		
 		}
-		if( source==inky)
+		if(source.equals(inky))
 		{
 			((JComponent) source).setVisible(false);
-			numPlayer--;
+			numPlayer++;
 			Affplayer(); 
 			jInky=new Joueur("inky",numPlayer,0);
 			listJ.add(jInky);
-			if (numPlayer==0)
+			if (numPlayer==j.getNbrJoueur())
 			{
 			l.launch();	this.setVisible(false);	
 			}
 		}
-		if(source==blinky)
+		if(source.equals(blinky))
 		{
 			((JComponent) source).setVisible(false);
-			numPlayer--;
+			numPlayer++;
 			Affplayer(); 
 			jBlinky=new Joueur("blinky",numPlayer,0);
 			listJ.add(jBlinky);
-			if (numPlayer==0)
+			if (numPlayer==j.getNbrJoueur())
 			{
 			l.launch();	this.setVisible(false);	
 			}
 		}
 		
-		if(source == TwoPlayers)
+		if(source.equals(TwoPlayers))
 		{
 			AppaerButtonGhost();
-			numPlayer=2;j.SetNbrJoueur(2);
+			numPlayer=0;j.setNbrJoueur(2);
 			Affplayer();
 		}
-		if(source == ThirdPlayers)
+		if(source.equals(ThirdPlayers))
 		{
 			AppaerButtonGhost();
-			numPlayer=3;j.SetNbrJoueur(3);
+			numPlayer=0;j.setNbrJoueur(3);
 			Affplayer();
 		}		
-		if(source == FourPlayers)
+		if(source.equals(FourPlayers))
 		{
 			AppaerButtonGhost();
-			numPlayer=4;j.SetNbrJoueur(4);
+			numPlayer=0;j.setNbrJoueur(4);
 			Affplayer();
 		}
 					
