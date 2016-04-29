@@ -2,7 +2,6 @@ package nl.tudelft.jpacman.level;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -15,7 +14,6 @@ import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Square;
 import nl.tudelft.jpacman.board.Unit;
 import nl.tudelft.jpacman.fruit.Fruit;
-import nl.tudelft.jpacman.fruit.Pepper;
 import nl.tudelft.jpacman.fruit.Pomegranate;
 import nl.tudelft.jpacman.npc.NPC;
 import nl.tudelft.jpacman.npc.ghost.Ghost;

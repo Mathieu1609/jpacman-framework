@@ -109,7 +109,7 @@ public class StatePanel extends JPanel
 	 * Let the score panel use a dedicated score formatter.
 	 * @param sf Score formatter to be used.
 	 */
-	public void setScoreFormatter(nl.tudelft.jpacman.ui.ScorePanel.ScoreFormatter sf) {
+	public void setScoreFormatter(ScoreFormatter sf) {
 		assert sf != null;
 		stateFormatter = (StateFormatter) sf;
 	}

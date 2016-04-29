@@ -3,10 +3,8 @@ package nl.tudelft.jpacman.sprite;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
 import nl.tudelft.jpacman.PacmanConfigurationException;
 import nl.tudelft.jpacman.board.Direction;
-import nl.tudelft.jpacman.multiplayers.Classement;
 import nl.tudelft.jpacman.npc.ghost.GhostColor;
 
 /**

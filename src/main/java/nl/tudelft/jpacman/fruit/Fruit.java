@@ -53,10 +53,7 @@ public  class Fruit  extends Pellet
 	public boolean check()
 	{
 		Date date = new Date();
-		
-		long timeDate=date.getTime();
-		long begin=beginDate.getTime();
-		
+				
 		long diffSecond=(date.getTime()-beginDate.getTime());
 		if(diffSecond>4000)
 		{

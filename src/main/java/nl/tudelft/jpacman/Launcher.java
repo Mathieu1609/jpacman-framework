@@ -185,7 +185,7 @@ public class Launcher {
 	}
 	public void before()
 	{
-		cM.ButtonPlayer();
+		cM.buttonPlayer();
 	}
 	/**
 	 * Disposes of the UI. For more information see {@link javax.swing.JFrame#dispose()}.

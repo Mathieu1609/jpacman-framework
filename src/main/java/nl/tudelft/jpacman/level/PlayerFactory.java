@@ -42,13 +42,13 @@ public class PlayerFactory {
 	 */
 	public Player createGhost(Joueur name)
 	{
-		if(name.getName()=="pinky")
+		if(name.getName().equals("pinky"))
 		return new Player(sprites.getGhostSprite(GhostColor.PINK),sprites.getPacManDeathAnimation(),"pinky");
-		if(name.getName()=="clyde")
+		if(name.getName().equals("clyde"))
 			return new Player(sprites.getGhostSprite(GhostColor.ORANGE),sprites.getPacManDeathAnimation(),"clyde");
-		if(name.getName()=="inky")
+		if(name.getName().equals("inky"))
 			return new Player(sprites.getGhostSprite(GhostColor.CYAN),sprites.getPacManDeathAnimation(),"inky");
-		if(name.getName()=="blinky")
+		if(name.getName().equals("blinky"))
 			return new Player(sprites.getGhostSprite(GhostColor.RED),sprites.getPacManDeathAnimation(),"blinky");
 		return new Player(sprites.getGhostSprite(GhostColor.RED),sprites.getPacManDeathAnimation(),"blinky");
 	}

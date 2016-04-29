@@ -3,7 +3,6 @@ package nl.tudelft.jpacman.game;
 import nl.tudelft.jpacman.level.Level;
 import nl.tudelft.jpacman.level.PlayerFactory;
 import nl.tudelft.jpacman.multiplayers.Joueur;
-import nl.tudelft.jpacman.npc.ghost.GhostColor;
 
 /**
  * Factory that provides Game objects.

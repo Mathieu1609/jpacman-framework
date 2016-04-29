@@ -1,7 +1,6 @@
 package nl.tudelft.jpacman.npc.ghost;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -10,8 +9,6 @@ import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.board.Square;
 import nl.tudelft.jpacman.npc.NPC;
 import nl.tudelft.jpacman.specialcase.SpecialSquare;
-import nl.tudelft.jpacman.sprite.EmptySprite;
-import nl.tudelft.jpacman.sprite.PacManSprites;
 import nl.tudelft.jpacman.sprite.Sprite;
 
 /**

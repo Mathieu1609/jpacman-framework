@@ -136,7 +136,8 @@ public class PlayerCollisions implements CollisionMap {
 		case "pinky":
 			l.cM.jPinky.setScore(player.getScore());
 		break;
-		
+		default:
+			break;
 		}
 		l.launch();
 		

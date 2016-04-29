@@ -27,7 +27,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	/**
 	 * Creating buttons for different Monsters
 	 */
-	public void ButtonGhost()
+	public void buttonGhost()
 	{
 		j=new Joueur();
 		blinky = new JButton("Blinky");
@@ -57,7 +57,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	/**
 	 * it brings up the buttons one time we chose a number of players
 	 */
-	public void AppaerButtonGhost()
+	public void appaerButtonGhost()
 	{
 		blinky.setVisible(true);
 		pinky.setVisible(true);
@@ -67,7 +67,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	/**
 	 * update texte player 
 	 */
-	public void Affplayer()
+	public void affplayer()
 	{
 		if(numPlayer==0)
 			Player.setText("Joueur 1, Veuillez chosir votre monstre");
@@ -78,7 +78,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	/**
 	 * creating buttons for choosing the number of players
 	 */
-	public void ButtonPlayer()
+	public void buttonPlayer()
 	{
 		Player= new JLabel("Joueur "+ numPlayer +", Veuillez chosir votre monstre");
 		TwoPlayers = new JButton("2 joueurs");
@@ -97,7 +97,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		panel.add(FourPlayers);
 		this.setContentPane(panel);
 		this.setVisible(true);
-		ButtonGhost();
+		buttonGhost();
 	}
 	/**
 	 * manages the event of button clicks
@@ -109,7 +109,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		{
 			((JComponent) source).setVisible(false); 
 			numPlayer++;
-			Affplayer();
+			affplayer();
 			jPinky=new Joueur("pinky",numPlayer,0);
 			listJ.add(jPinky);
 			if (numPlayer==j.getNbrJoueur())
@@ -121,7 +121,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		{
 			((JComponent) source).setVisible(false); 
 			numPlayer++;
-			Affplayer();
+			affplayer();
 			jClyde=new Joueur("clyde",numPlayer,0);
 			listJ.add(jClyde);
 			if (numPlayer==j.getNbrJoueur())
@@ -134,7 +134,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		{
 			((JComponent) source).setVisible(false);
 			numPlayer++;
-			Affplayer(); 
+			affplayer(); 
 			jInky=new Joueur("inky",numPlayer,0);
 			listJ.add(jInky);
 			if (numPlayer==j.getNbrJoueur())
@@ -146,7 +146,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		{
 			((JComponent) source).setVisible(false);
 			numPlayer++;
-			Affplayer(); 
+			affplayer(); 
 			jBlinky=new Joueur("blinky",numPlayer,0);
 			listJ.add(jBlinky);
 			if (numPlayer==j.getNbrJoueur())
@@ -157,21 +157,21 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		
 		if(source.equals(TwoPlayers))
 		{
-			AppaerButtonGhost();
+			appaerButtonGhost();
 			numPlayer=0;j.setNbrJoueur(2);
-			Affplayer();
+			affplayer();
 		}
 		if(source.equals(ThirdPlayers))
 		{
-			AppaerButtonGhost();
+			appaerButtonGhost();
 			numPlayer=0;j.setNbrJoueur(3);
-			Affplayer();
+			affplayer();
 		}		
 		if(source.equals(FourPlayers))
 		{
-			AppaerButtonGhost();
+			appaerButtonGhost();
 			numPlayer=0;j.setNbrJoueur(4);
-			Affplayer();
+			affplayer();
 		}
 					
 	}
