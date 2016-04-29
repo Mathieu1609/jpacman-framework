@@ -17,7 +17,7 @@ public class Bridge extends SpecialSquare
 	 * Record enter direction for a unit.
 	 */
 	
-	HashMap<Unit,String> listUnite;
+	 private HashMap<Unit,String> listUnite;
 	
 	public Bridge(Sprite sprite) 
 	{
@@ -46,6 +46,8 @@ public class Bridge extends SpecialSquare
 			break;
 		case SOUTH:
 			position="before";
+			break;
+		default:
 			break;
 
 		}

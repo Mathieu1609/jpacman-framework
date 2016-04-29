@@ -49,13 +49,15 @@ public class SpecialSquare extends Unit
      Date date = new Date();
 				
 		long diffSecond=(date.getTime()-beginDate.getTime());
+		boolean bool=true;
 		if(diffSecond>300)
 		{
-			return true;
+			bool= true;
 		}else
 		{
-			return false;
+			bool=false;
 		}
+		return bool;
 	}
 
 }

@@ -96,7 +96,7 @@ public class LevelFactory {
 	 * 
 	 * @return The new ghost.
 	 */
-	NPC createGhost() 
+	protected NPC createGhost() 
 	{
 		ghostIndex++;
 		ghostIndex %= GHOSTS;

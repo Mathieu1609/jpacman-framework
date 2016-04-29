@@ -117,13 +117,15 @@ public class Player extends Unit {
 	
 	public boolean isEffect()
 	{
+		boolean bool=true;
 		if(effect instanceof Fruit)
 		{
-			return true;
+			bool=true;
 		}else
 		{
-			return false;
+			bool=false;
 		}
+		return bool;
 	}
 	
 	/**

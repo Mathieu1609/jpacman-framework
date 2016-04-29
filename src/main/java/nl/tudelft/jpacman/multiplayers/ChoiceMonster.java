@@ -19,7 +19,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	private JButton blinky,clyde,inky,pinky;
 	private JLabel Player;
 	private int numPlayer=0;
-	JPanel panel = new JPanel();
+	private JPanel panel = new JPanel();
 	public Joueur jInky,jClyde,jPinky,jBlinky,j;
 	public ArrayList<Joueur>listJ=new ArrayList<Joueur>();
 	private Launcher l = new Launcher();

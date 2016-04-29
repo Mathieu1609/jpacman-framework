@@ -13,6 +13,7 @@ public class Pomegranate extends Fruit
 	{
 		int diffAbscisse=0;
 		int diffOrdonne=0;
+		boolean bool=true;
 		
 		if(abscisseUnit>abscisseNpc)
 		{
@@ -31,12 +32,13 @@ public class Pomegranate extends Fruit
 		
 		if((diffAbscisse<=4)&&(diffOrdonne<=4))
 		{
-			return true;
+			bool=true;
 		}else
 		{
-			return false;
+			bool=false;
 		}
 		
+		return bool;
 	}
 	
 	@Override

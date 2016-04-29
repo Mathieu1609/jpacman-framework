@@ -275,7 +275,8 @@ public class Level {
 					}
 					
 					break;
-				
+				 default:
+					break;
 				}
 			
 			}
@@ -552,8 +553,8 @@ public class Level {
 				}
 			}
 			
-		
-			if(npc.isDead()==false)
+			boolean isdead =npc.isDead();
+			if(isdead==false)
 			{
 					Direction nextMove = npc.nextMove();
 			if (nextMove != null)
