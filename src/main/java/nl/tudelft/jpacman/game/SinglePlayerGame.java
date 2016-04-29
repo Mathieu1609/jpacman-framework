@@ -3,6 +3,9 @@ package nl.tudelft.jpacman.game;
 import java.util.List;
 
 import nl.tudelft.jpacman.board.Direction;
+import nl.tudelft.jpacman.controls.ControlStrategy;
+import nl.tudelft.jpacman.controls.PlayerStrategy;
+import nl.tudelft.jpacman.controls.ScoreStrategy;
 import nl.tudelft.jpacman.level.Level;
 import nl.tudelft.jpacman.level.Player;
 
@@ -15,6 +18,7 @@ import com.google.common.collect.ImmutableList;
  */
 public class SinglePlayerGame extends Game {
 
+	private ControlStrategy pacmanControls;
 	/**
 	 * The player of this game.
 	 */
@@ -51,7 +55,19 @@ public class SinglePlayerGame extends Game {
 	public Level getLevel() {
 		return level;
 	}
-
+	public ControlStrategy getPacmanControls(){
+		return this.pacmanControls;
+	}
+	public void toggleAI(){
+		if (pacmanControls instanceof PlayerStrategy){
+			pacmanControls.stop();
+			pacmanControls = new ScoreStrategy(this,player);
+		}
+		else{
+			pacmanControls.stop();
+			pacmanControls = new PlayerStrategy(this,player);
+		}
+	}
 	/**
 	 * Moves the player one square to the north if possible.
 	 */

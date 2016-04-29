@@ -3,6 +3,7 @@ package nl.tudelft.jpacman.game;
 import java.util.List;
 
 import nl.tudelft.jpacman.board.Direction;
+import nl.tudelft.jpacman.controls.ControlStrategy;
 import nl.tudelft.jpacman.level.Level;
 import nl.tudelft.jpacman.level.Level.LevelObserver;
 import nl.tudelft.jpacman.level.Player;
@@ -102,4 +103,6 @@ public abstract class Game implements LevelObserver {
 	public void levelLost() {
 		stop();
 	}
+	public abstract ControlStrategy getPacmanControls();
+	public abstract void toggleAI();
 }

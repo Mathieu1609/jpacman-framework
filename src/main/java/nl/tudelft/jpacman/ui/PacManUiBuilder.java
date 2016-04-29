@@ -23,7 +23,7 @@ public class PacManUiBuilder {
 	 * Caption for the default start button.
 	 */
 	private static final String START_CAPTION = "Start";
-
+	private static final String AI_CAPTION = "IA";
 	/**
 	 * Map of buttons and their actions.
 	 */
@@ -66,6 +66,7 @@ public class PacManUiBuilder {
 		if (defaultButtons) {
 			addStartButton(game);
 			addStopButton(game);
+			addAIButton(game);
 		}
 		return new PacManUI(game, buttons, keyMappings, scoreFormatter);
 	}
@@ -105,7 +106,17 @@ public class PacManUiBuilder {
 			}
 		});
 	}
-
+	private void addAIButton(final Game game){
+		assert game != null;
+		buttons.put(AI_CAPTION, new Action() {
+			@Override
+			public void doAction() {
+				game.toggleAI();
+				game.start();
+			}
+		});
+		
+	}
 	/**
 	 * Adds a key listener to the UI.
 	 * 

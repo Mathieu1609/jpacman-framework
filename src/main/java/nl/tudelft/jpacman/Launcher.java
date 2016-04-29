@@ -7,6 +7,8 @@ import java.util.List;
 
 import nl.tudelft.jpacman.board.BoardFactory;
 import nl.tudelft.jpacman.board.Direction;
+import nl.tudelft.jpacman.controls.ControlStrategy;
+import nl.tudelft.jpacman.controls.PlayerStrategy;
 import nl.tudelft.jpacman.game.Game;
 import nl.tudelft.jpacman.game.GameFactory;
 import nl.tudelft.jpacman.level.Level;
@@ -132,31 +134,37 @@ public class Launcher {
 	 */
 	protected void addSinglePlayerKeys(final PacManUiBuilder builder,
 			final Game game) {
-		final Player p1 = getSinglePlayer(game);
-
 		builder.addKey(KeyEvent.VK_UP, new Action() {
 
 			@Override
 			public void doAction() {
-				game.move(p1, Direction.NORTH);
+				ControlStrategy controls = game.getPacmanControls();
+				if (controls instanceof PlayerStrategy)
+					game.getPacmanControls().setDirection(Direction.NORTH);
 			}
 		}).addKey(KeyEvent.VK_DOWN, new Action() {
 
 			@Override
 			public void doAction() {
-				game.move(p1, Direction.SOUTH);
+				ControlStrategy controls = game.getPacmanControls();
+				if (controls instanceof PlayerStrategy)
+					game.getPacmanControls().setDirection(Direction.SOUTH);
 			}
 		}).addKey(KeyEvent.VK_LEFT, new Action() {
 
 			@Override
 			public void doAction() {
-				game.move(p1, Direction.WEST);
+				ControlStrategy controls = game.getPacmanControls();
+				if (controls instanceof PlayerStrategy)
+					game.getPacmanControls().setDirection(Direction.WEST);
 			}
 		}).addKey(KeyEvent.VK_RIGHT, new Action() {
 
 			@Override
 			public void doAction() {
-				game.move(p1, Direction.EAST);
+				ControlStrategy controls = game.getPacmanControls();
+				if (controls instanceof PlayerStrategy)
+					game.getPacmanControls().setDirection(Direction.EAST);
 			}
 		});
 
