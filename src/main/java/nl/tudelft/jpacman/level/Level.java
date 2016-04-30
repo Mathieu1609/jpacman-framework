@@ -551,7 +551,7 @@ public class Level {
 				}
 			}
 			
-			if(npc.isDead())
+			if(npc.isDead()==false)
 			{
 					Direction nextMove = npc.nextMove();
 			if (nextMove != null)
