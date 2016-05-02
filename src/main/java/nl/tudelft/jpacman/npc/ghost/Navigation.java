@@ -44,30 +44,30 @@ public final class Navigation {
 			return new ArrayList<>();
 		}
 
-		List<Node> targets = new ArrayList<>();
+		final List<Node> targets = new ArrayList<>();
 		Set<Square> visited = new HashSet<>();
 		targets.add(new Node(null, from, null));
 		while (!targets.isEmpty()) {
-			Node n = targets.remove(0);
-			Square s = n.getSquare();
-			if (s == to) {
-				List<Direction> path = n.getPath();
+			Node node = targets.remove(0);
+			Square square = node.getSquare();
+			if (square == to) {
+				List<Direction> path = node.getPath();
 				return path;
 			}
-			visited.add(s);
-			addNewTargets(traveller, targets, visited, n, s);
+			visited.add(square);
+			addNewTargets(traveller, targets, visited, node, square);
 		}
 		return null;
 	}
 
 	private static void addNewTargets(Unit traveller, List<Node> targets,
-			Set<Square> visited, Node n, Square s) {
-		for (Direction d : Direction.values()) {
-			Square target = s.getSquareAt(d);
+			Set<Square> visited, Node node, Square square) {
+		for (Direction direct : Direction.values()) {
+			Square target = square.getSquareAt(direct);
 			if (!visited.contains(target)
 					&& (traveller == null || target
 							.isAccessibleTo(traveller))) {
-				targets.add(new Node(d, target, n));
+				targets.add(new Node(direct, target, node));
 			}
 		}
 	}
@@ -98,8 +98,8 @@ public final class Navigation {
 				return unit;
 			}
 			visited.add(square);
-			for (Direction d : Direction.values()) {
-				Square newTarget = square.getSquareAt(d);
+			for (Direction direct : Direction.values()) {
+				Square newTarget = square.getSquareAt(direct);
 				if (!visited.contains(newTarget) && !toDo.contains(newTarget)) {
 					toDo.add(newTarget);
 				}
@@ -119,9 +119,9 @@ public final class Navigation {
 	 *         <code>null</code> of none does.
 	 */
 	public static Unit findUnit(Class<? extends Unit> type, Square square) {
-		for (Unit u : square.getOccupants()) {
-			if (type.isInstance(u)) {
-				return u;
+		for (Unit unit : square.getOccupants()) {
+			if (type.isInstance(unit)) {
+				return unit;
 			}
 		}
 		return null;
@@ -153,19 +153,19 @@ public final class Navigation {
 		/**
 		 * Creates a new node.
 		 * 
-		 * @param d
+		 * @param direct
 		 *            The direction, which is <code>null</code> for the root
 		 *            node.
-		 * @param s
+		 * @param square
 		 *            The square.
-		 * @param p
+		 * @param node
 		 *            The parent node, which is <code>null</code> for the root
 		 *            node.
 		 */
-		private Node(Direction d, Square s, Node p) {
-			this.direction = d;
-			this.square = s;
-			this.parent = p;
+		private Node(Direction direct, Square square, Node node) {
+			this.direction = direct;
+			this.square = square;
+			this.parent = node;
 		}
 
 		/**

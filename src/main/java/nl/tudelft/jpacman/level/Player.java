@@ -72,7 +72,7 @@ public class Player extends Unit {
 		this.alive = true;
 		this.sprites = spriteMap;
 		this.deathSprite = deathAnimation;
-		this.setName(name);
+		this.name=name;
 		deathSprite.setAnimating(false);
 		this.invisible=false;
 		this.effect= new Object();
@@ -153,9 +153,9 @@ public class Player extends Unit {
 	 * @param invisible_ true if invisble, false in other way
 	 */
 	
-	public void setInvisible(boolean invisible_)
+	public void setInvisible(boolean invisibles)
 	{
-		invisible=invisible_;
+		invisible=invisibles;
 	}
 	
 	/**
@@ -163,9 +163,9 @@ public class Player extends Unit {
 	 * @param stun_ true if stun, false in other way
 	 */
 	
-	public void setStun(boolean stun_)
+	public void setStun(boolean stuns)
 	{
-		stun=stun_;
+		stun=stuns;
 	}
 	
 
@@ -230,9 +230,9 @@ public class Player extends Unit {
 	 */
 	
 	
-	public void setSpawn(Square spawn_)
+	public void setSpawn(Square spawns)
 	{
-		this.spawn=spawn_;
+		this.spawn=spawns;
 	}
 	
 	/**

@@ -18,8 +18,8 @@ public class RandomStrategy extends ControlStrategy{
 	public Direction nextMove()
 	{
 		Random rand = new Random();
-		Direction[] dirs_list = Direction.values();
-		Direction dir = dirs_list[rand.nextInt(dirs_list.length)];
+		Direction[] dirslist = Direction.values();
+		Direction dir = dirslist[rand.nextInt(dirslist.length)];
 		Square sq = player.getSquare().getSquareAt(dir);	
 		if(sq.isAccessibleTo(player))
 		{

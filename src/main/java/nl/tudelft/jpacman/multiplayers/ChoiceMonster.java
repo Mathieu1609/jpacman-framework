@@ -15,9 +15,9 @@ import nl.tudelft.jpacman.Launcher;
 
 public class ChoiceMonster extends JFrame implements ActionListener {
 	
-	 private JButton TwoPlayers,ThirdPlayers,FourPlayers;
+	private JButton twoPlayers,thirdPlayers,fourPlayers;
 	private JButton blinky,clyde,inky,pinky;
-	private JLabel Player;
+	private JLabel player;
 	private int numPlayer=0;
 	private JPanel panel = new JPanel();
 	public Joueur jInky,jClyde,jPinky,jBlinky,j;
@@ -52,7 +52,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		panel2.add(pinky);
 		panel2.add(clyde);
 		panel.add(panel2);
-		panel.add(Player,BorderLayout.SOUTH);
+		panel.add(player,BorderLayout.SOUTH);
 	}
 	/**
 	 * it brings up the buttons one time we chose a number of players
@@ -70,9 +70,9 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	public void affplayer()
 	{
 		if(numPlayer==0)
-			Player.setText("Joueur 1, Veuillez chosir votre monstre");
+			player.setText("Joueur 1, Veuillez chosir votre monstre");
 		else
-		Player.setText("Joueur "+ numPlayer +", Veuillez chosir votre monstre");
+		player.setText("Joueur "+ numPlayer +", Veuillez chosir votre monstre");
 		
 	}
 	/**
@@ -80,21 +80,21 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	 */
 	public void buttonPlayer()
 	{
-		Player= new JLabel("Joueur "+ numPlayer +", Veuillez chosir votre monstre");
-		TwoPlayers = new JButton("2 joueurs");
-		ThirdPlayers = new JButton("3 joueurs");
-		FourPlayers = new JButton("4 joueurs");
-		TwoPlayers.addActionListener(this);
+		player= new JLabel("Joueur "+ numPlayer +", Veuillez chosir votre monstre");
+		twoPlayers = new JButton("2 joueurs");
+		thirdPlayers = new JButton("3 joueurs");
+		fourPlayers = new JButton("4 joueurs");
+		twoPlayers.addActionListener(this);
 	
-		ThirdPlayers.addActionListener(this);
+		thirdPlayers.addActionListener(this);
 		
-		FourPlayers.addActionListener(this);
+		fourPlayers.addActionListener(this);
 
 		this.setTitle("Nombre de joueurs");
 		this.setSize(500,300);
-		panel.add(TwoPlayers);
-		panel.add(ThirdPlayers);
-		panel.add(FourPlayers);
+		panel.add(twoPlayers);
+		panel.add(thirdPlayers);
+		panel.add(fourPlayers);
 		this.setContentPane(panel);
 		this.setVisible(true);
 		buttonGhost();
@@ -155,19 +155,19 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			}
 		}
 		
-		if(source.equals(TwoPlayers))
+		if(source.equals(twoPlayers))
 		{
 			appaerButtonGhost();
 			numPlayer=0;j.setNbrJoueur(2);
 			affplayer();
 		}
-		if(source.equals(ThirdPlayers))
+		if(source.equals(thirdPlayers))
 		{
 			appaerButtonGhost();
 			numPlayer=0;j.setNbrJoueur(3);
 			affplayer();
 		}		
-		if(source.equals(FourPlayers))
+		if(source.equals(fourPlayers))
 		{
 			appaerButtonGhost();
 			numPlayer=0;j.setNbrJoueur(4);

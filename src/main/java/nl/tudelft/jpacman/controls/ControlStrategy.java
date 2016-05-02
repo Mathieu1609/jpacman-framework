@@ -11,7 +11,7 @@ public abstract class ControlStrategy
 {
 	protected Game game;
 	protected Player player;
-	protected Direction last_dir;
+	protected Direction lastdir;
 	protected boolean running;
 	
 	protected final int MOVE_INTERVAL = 175;
@@ -20,7 +20,7 @@ public abstract class ControlStrategy
 	{
 		this.game = game;
 		this.player = player;
-		start();
+		this.start();
 	}
 	protected Direction opposite(Direction direction)
 	{
@@ -41,15 +41,15 @@ public abstract class ControlStrategy
 	}
 	protected boolean isIntersection(Square square)
 	{
-		Direction[] dirs_list = Direction.values();
+		Direction[] dirslist = Direction.values();
 		ArrayList<Direction> dirs = new ArrayList<Direction>();
 		if (square.isAccessibleTo(player))
 		{	
-			for(int i=0; i < dirs_list.length; i++)
+			for(int i=0; i < dirslist.length; i++)
 			{
-				if (square.getSquareAt(dirs_list[i]).isAccessibleTo(player))
+				if (square.getSquareAt(dirslist[i]).isAccessibleTo(player))
 				{
-					dirs.add(dirs_list[i]);
+					dirs.add(dirslist[i]);
 					if ((dirs.size() == 2 && dirs.get(0) != opposite(dirs.get(1)))
 							|| dirs.size() > 2)
 						return true;
@@ -62,14 +62,14 @@ public abstract class ControlStrategy
 	{
 		if (player.getSquare().getSquareAt(dir).isAccessibleTo(player))
 		{
-			this.last_dir = dir;
+			this.lastdir = dir;
 		}
 	}
 	protected void move(Direction dir)
 	{
 		if (player.getSquare().getSquareAt(dir).isAccessibleTo(player))
 		{
-			this.last_dir = dir;
+			this.lastdir = dir;
 			this.game.move(player, dir);
 		}
 	}

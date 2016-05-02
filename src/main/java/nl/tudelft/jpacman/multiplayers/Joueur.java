@@ -11,11 +11,11 @@ public class Joueur {
 	private ArrayList<Joueur> listJoueur;
 	private int nbrJoueur;
 	
-	public Joueur(String name_,int numero_,int score_){
+	public Joueur(String name,int numero,int score){
 		
-		name=name_;
-		numero=numero_;
-		score=score_;
+		this.name=name;
+		this.numero=numero;
+		this.score=score;
 		
 	}
 	public Joueur(){}

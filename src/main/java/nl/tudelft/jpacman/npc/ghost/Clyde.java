@@ -50,7 +50,7 @@ public class Clyde extends Ghost {
 	 * The variation in intervals, this makes the ghosts look more dynamic and
 	 * less predictable.
 	 */
-	private static final int INTERVAL_VARIATION = 50;
+	private static final int INTERVAL_VAR = 50;
 
 	/**
 	 * The base movement interval.
@@ -86,7 +86,7 @@ public class Clyde extends Ghost {
 
 	@Override
 	public long getInterval() {
-		return MOVE_INTERVAL + new Random().nextInt(INTERVAL_VARIATION);
+		return MOVE_INTERVAL + new Random().nextInt(INTERVAL_VAR);
 	}
 
 	/**
@@ -117,15 +117,15 @@ public class Clyde extends Ghost {
 		List<Direction> path = Navigation.shortestPath(getSquare(), target,
 				this);
 		if (path != null && !path.isEmpty()) {
-			Direction d = path.get(0);
+			Direction direct = path.get(0);
 			if (path.size() <= SHYNESS) {
-				Direction oppositeDir = OPPOSITES.get(d);
+				Direction oppositeDir = OPPOSITES.get(direct);
 				return oppositeDir;
 			}
-			return d;
+			return direct;
 		}
-		Direction d = randomMove();
-		return d;
+		Direction dir = randomMove();
+		return dir;
 	}
 
 

@@ -1,0 +1,1652 @@
+src/main/java/nl/tudelft/jpacman/Launcher.java:30:	This class has too many methods, consider refactoring it.
+src/main/java/nl/tudelft/jpacman/Launcher.java:32:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:33:	Avoid variables with short names like cM
+src/main/java/nl/tudelft/jpacman/Launcher.java:33:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:34:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/Launcher.java:34:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:35:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/Launcher.java:35:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:50:	Parameter 'joueur' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:51:	Avoid variables with short names like gf
+src/main/java/nl/tudelft/jpacman/Launcher.java:51:	Local variable 'gf' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:52:	Local variable 'level' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:63:	Local variable 'parser' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:64:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/Launcher.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/Launcher.java:137:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:138:	Local variable 'controls' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:139:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/Launcher.java:140:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/Launcher.java:145:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:146:	Local variable 'controls' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:147:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/Launcher.java:148:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/Launcher.java:153:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:154:	Local variable 'controls' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:155:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/Launcher.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/Launcher.java:161:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:162:	Local variable 'controls' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:163:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/Launcher.java:164:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/Launcher.java:170:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/Launcher.java:184:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/Launcher.java:184:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/Launcher.java:185:	Local variable 'builder' could be declared final
+src/main/java/nl/tudelft/jpacman/Launcher.java:187:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/Launcher.java:189:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/Launcher.java:189:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/Launcher.java:191:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/Launcher.java:196:	Comment is too large: Line too long
+src/main/java/nl/tudelft/jpacman/Launcher.java:210:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/nl/tudelft/jpacman/Launcher.java:210:	Parameter 'args' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java:17:	Parameter 'message' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java:26:	Parameter 'cause' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java:36:	Parameter 'cause' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java:36:	Parameter 'message' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/board/Board.java:13:	It is somewhat confusing to have a field name matching the declaring class name
+src/main/java/nl/tudelft/jpacman/board/Board.java:22:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/nl/tudelft/jpacman/board/Board.java:22:	Parameter 'grid' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:22:	The user-supplied array 'grid' is stored directly.
+src/main/java/nl/tudelft/jpacman/board/Board.java:25:	Overridable method 'invariant' called during object construction
+src/main/java/nl/tudelft/jpacman/board/Board.java:36:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/board/Board.java:61:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/board/Board.java:70:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/board/Board.java:70:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/board/Board.java:70:	Found 'UR'-anomaly for variable 'result' (lines '70'-'70').
+src/main/java/nl/tudelft/jpacman/board/Board.java:70:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:70:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:72:	Local variable 'result' could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:78:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:78:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/board/Board.java:80:	Found 'DD'-anomaly for variable 'abscisse' (lines '80'-'87').
+src/main/java/nl/tudelft/jpacman/board/Board.java:87:	Found 'DD'-anomaly for variable 'abscisse' (lines '87'-'87').
+src/main/java/nl/tudelft/jpacman/board/Board.java:95:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:95:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/board/Board.java:97:	Found 'DD'-anomaly for variable 'ordonne' (lines '97'-'104').
+src/main/java/nl/tudelft/jpacman/board/Board.java:104:	Found 'DD'-anomaly for variable 'ordonne' (lines '104'-'104').
+src/main/java/nl/tudelft/jpacman/board/Board.java:113:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/board/Board.java:122:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/board/Board.java:122:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/board/Board.java:122:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Board.java:122:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:27:	Parameter 'spriteStore' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:40:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:40:	Found 'UR'-anomaly for variable 'dir' (lines '40'-'53').
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:40:	Parameter 'grid' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:44:	Local variable 'board' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:46:	Local variable 'width' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:47:	Found 'DU'-anomaly for variable 'height' (lines '47'-'62').
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:47:	Local variable 'height' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:51:	Found 'DD'-anomaly for variable 'square' (lines '51'-'51').
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:51:	Found 'DU'-anomaly for variable 'square' (lines '51'-'62').
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:51:	Local variable 'square' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:52:	Local variable 'dir' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:53:	Local variable 'dirX' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:54:	Local variable 'dirY' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:55:	Local variable 'neighbour' could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:70:	Avoid instantiation through private constructors from outside of the constructors class.
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:79:	Avoid instantiation through private constructors from outside of the constructors class.
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:87:	Avoid short class names like Wall
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:93:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:101:	It is a good practice to call super() in a constructor
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:101:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:107:	Parameter 'unit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:107:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:112:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:129:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:137:	It is a good practice to call super() in a constructor
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:137:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:142:	Parameter 'unit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:142:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/board/BoardFactory.java:148:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/board/Direction.java:34:	Avoid variables with short names like dx
+src/main/java/nl/tudelft/jpacman/board/Direction.java:40:	Avoid variables with short names like dy
+src/main/java/nl/tudelft/jpacman/board/Direction.java:42:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/board/Direction.java:52:	Parameter 'deltaX' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Direction.java:52:	Parameter 'deltaY' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Square.java:18:	Abstract classes should be named AbstractXXX
+src/main/java/nl/tudelft/jpacman/board/Square.java:29:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/board/Square.java:47:	Parameter 'direction' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Square.java:52:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/board/Square.java:61:	Parameter 'direction' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Square.java:61:	Parameter 'neighbour' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Square.java:86:	Parameter 'occupant' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Square.java:92:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/board/Square.java:103:	Parameter 'occupant' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Square.java:116:	Found 'UR'-anomaly for variable 'occupant' (lines '116'-'119').
+src/main/java/nl/tudelft/jpacman/board/Square.java:118:	Local variable 'occupant' could be declared final
+src/main/java/nl/tudelft/jpacman/board/Square.java:120:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/board/Unit.java:11:	Abstract classes should be named AbstractXXX
+src/main/java/nl/tudelft/jpacman/board/Unit.java:11:	Avoid short class names like Unit
+src/main/java/nl/tudelft/jpacman/board/Unit.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/board/Unit.java:34:	Parameter 'newDirection' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Unit.java:67:	Parameter 'target' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Unit.java:88:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/main/java/nl/tudelft/jpacman/board/Unit.java:104:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/board/Unit.java:104:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/board/Unit.java:123:	Found 'UR'-anomaly for variable 'occupant' (lines '123'-'127').
+src/main/java/nl/tudelft/jpacman/board/Unit.java:123:	Parameter 'location' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/board/Unit.java:125:	Local variable 'occupant' could be declared final
+src/main/java/nl/tudelft/jpacman/board/Unit.java:129:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:10:	Abstract classes should be named AbstractXXX
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:10:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:12:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:13:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:14:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:15:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:17:	This final field could be made static
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:17:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:19:	Parameter 'game' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:19:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:19:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:23:	Overridable method 'start' called during object construction
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:25:	Parameter 'direction' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:25:	protectedMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:30:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:32:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:34:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:36:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:42:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:42:	protectedMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:44:	Found 'DU'-anomaly for variable 'dirslist' (lines '44'-'60').
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:44:	Local variable 'dirslist' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:45:	Found 'DU'-anomaly for variable 'dirs' (lines '45'-'60').
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:45:	Local variable 'dirs' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:50:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:50:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:53:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:53:	Deeply nested if..then statements are hard to read
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:53:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:53:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:55:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:61:	Parameter 'dir' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:61:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:63:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:63:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:68:	Parameter 'dir' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:68:	protectedMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:70:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:70:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:76:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:79:	Local variable 'run' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:79:	To be compliant to J2EE, a webapp should not use any thread.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:79:	To be compliant to J2EE, a webapp should not use any thread.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:80:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:86:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:92:	Avoid printStackTrace(); use a logger call instead.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:98:	To be compliant to J2EE, a webapp should not use any thread.
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:100:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ControlStrategy.java:104:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/PlayerStrategy.java:7:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/PlayerStrategy.java:9:	Parameter 'game' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/PlayerStrategy.java:9:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/PlayerStrategy.java:9:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/PlayerStrategy.java:13:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:10:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:13:	Parameter 'game' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:13:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:13:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:18:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:20:	Local variable 'rand' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:21:	Local variable 'dirslist' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:22:	Local variable 'dir' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:22:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:23:	Avoid variables with short names like sq
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:23:	Local variable 'sq' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/controls/RandomStrategy.java:26:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:14:	The class 'ScoreStrategy' has a Cyclomatic Complexity of 7 (Highest = 12).
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:14:	The class 'ScoreStrategy' has a Modified Cyclomatic Complexity of 6 (Highest = 11).
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:14:	The class 'ScoreStrategy' has a Standard Cyclomatic Complexity of 6 (Highest = 11).
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:14:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:16:	This final field could be made static
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:16:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:17:	This final field could be made static
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:17:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:19:	Parameter 'game' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:19:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:19:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:23:	Found 'UR'-anomaly for variable 'direction' (lines '23'-'34').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:23:	Found 'UR'-anomaly for variable 'unit' (lines '23'-'39').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:23:	Parameter 'dir' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:23:	The method 'score' has a Cyclomatic Complexity of 12.
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:23:	The method 'score' has a Modified Cyclomatic Complexity of 11.
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:23:	The method 'score' has a Standard Cyclomatic Complexity of 11.
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:25:	Avoid variables with short names like sq
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:26:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:26:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:27:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:28:	Found 'DD'-anomaly for variable 'score' (lines '28'-'31').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:29:	Found 'DD'-anomaly for variable 'dist' (lines '29'-'56').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:29:	Found 'DU'-anomaly for variable 'dist' (lines '29'-'60').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:30:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:32:	Local variable 'direction' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:34:	Use equals() to compare object references.
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:36:	Local variable 'sideSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:37:	Local variable 'unit' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:46:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:48:	Local variable 'unit' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:50:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:52:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:56:	Found 'DD'-anomaly for variable 'dist' (lines '56'-'56').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:56:	Found 'DU'-anomaly for variable 'dist' (lines '56'-'60').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:61:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:63:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:64:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:65:	Local variable 'dirslist' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:66:	Found 'DD'-anomaly for variable 'scoreslist' (lines '66'-'70').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:67:	Found 'DU'-anomaly for variable 'max' (lines '67'-'86').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:70:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:73:	Found 'DU'-anomaly for variable 'max' (lines '73'-'86').
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:76:	Local variable 'best' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:84:	Local variable 'rand' could be declared final
+src/main/java/nl/tudelft/jpacman/controls/ScoreStrategy.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/fruit/Fish.java:5:	Avoid short class names like Fish
+src/main/java/nl/tudelft/jpacman/fruit/Fish.java:5:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Fish.java:8:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Fish.java:8:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Fish.java:8:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Fish.java:15:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:8:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:23:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:23:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:23:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:55:	Local variable 'date' could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:57:	Local variable 'diffSecond' could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:58:	Avoid using Literals in Conditional Statements
+src/main/java/nl/tudelft/jpacman/fruit/Fruit.java:61:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/fruit/Pepper.java:6:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Pepper.java:10:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pepper.java:10:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pepper.java:10:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Pepper.java:16:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:4:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:7:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:7:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:7:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:12:	Parameter 'abscisseNpc' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:12:	Parameter 'abscisseUnit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:12:	Parameter 'ordonneNpc' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:12:	Parameter 'ordonneUnit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:12:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:14:	Found 'DD'-anomaly for variable 'diffAbscisse' (lines '14'-'20').
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:14:	Found 'DD'-anomaly for variable 'diffAbscisse' (lines '14'-'23').
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:15:	Found 'DD'-anomaly for variable 'diffOrdonne' (lines '15'-'27').
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:15:	Found 'DD'-anomaly for variable 'diffOrdonne' (lines '15'-'30').
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:16:	Found 'DD'-anomaly for variable 'bool' (lines '16'-'35').
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:16:	Found 'DD'-anomaly for variable 'bool' (lines '16'-'38').
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:33:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:33:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:33:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:33:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/fruit/Pomegranate.java:45:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Potato.java:5:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Potato.java:8:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Potato.java:8:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Potato.java:8:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Potato.java:14:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Tomato.java:5:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Tomato.java:8:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Tomato.java:8:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/fruit/Tomato.java:8:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/fruit/Tomato.java:14:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/Game.java:16:	Abstract classes should be named AbstractXXX
+src/main/java/nl/tudelft/jpacman/game/Game.java:16:	Avoid short class names like Game
+src/main/java/nl/tudelft/jpacman/game/Game.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/game/Game.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/game/Game.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/game/Game.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/game/Game.java:46:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/game/Game.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/game/Game.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/game/Game.java:90:	Parameter 'direction' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/game/Game.java:90:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/game/Game.java:93:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/game/Game.java:98:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/Game.java:103:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/Game.java:106:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/Game.java:107:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/GameFactory.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/game/GameFactory.java:25:	Parameter 'playerFactory' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/game/GameFactory.java:36:	Parameter 'level' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/game/GameFactory.java:36:	Parameter 'name' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:21:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:40:	Avoid variables with short names like l
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:40:	Avoid variables with short names like p
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:40:	It is a good practice to call super() in a constructor
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:40:	Parameter 'l' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:40:	Parameter 'p' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:51:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:56:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:59:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java:62:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:36:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:52:	Parameter 'collidee' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:52:	Parameter 'collider' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:52:	Parameter 'handler' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:57:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:76:	Parameter 'collidee' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:76:	Parameter 'collider' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:76:	Parameter 'handler' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:76:	Parameter 'symetric' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:86:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:96:	Parameter 'collider' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:97:	Parameter 'collidee' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:97:	Parameter 'handler' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:104:	Local variable 'map' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:109:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:125:	Parameter 'collider' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:126:	Parameter 'collidee' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:127:	Local variable 'colliderKey' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:130:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:133:	Local variable 'map' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:135:	Local variable 'collideeKey' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:138:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:141:	Local variable 'collisionHandler' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:141:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:150:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:160:	Found 'UR'-anomaly for variable 'pointer' (lines '160'-'164').
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:161:	Parameter 'key' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:161:	Parameter 'map' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:162:	Avoid excessively long variable names like collideeInheritance
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:162:	Local variable 'collideeInheritance' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:163:	Local variable 'pointer' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:165:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:180:	Found 'UR'-anomaly for variable 'classInterface' (lines '180'-'193').
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:181:	Parameter 'clazz' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:182:	Local variable 'found' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:187:	Local variable 'current' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:188:	Local variable 'superClass' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:188:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:189:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:192:	Local variable 'classInterface' could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:193:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:203:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:226:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:242:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:250:	Parameter 'handler' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:259:	Parameter 'collidee' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java:259:	Parameter 'collider' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/CollisionMap.java:13:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:7:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:20:	Private field 'collisions' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:20:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:23:	Parameter 'movedInto' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:23:	Parameter 'mover' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:23:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:34:	Local variable 'collisionMap' could be declared final
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:40:	Parameter 'ghost' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:40:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:40:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:49:	Parameter 'pellet' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:49:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java:49:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/Level.java:1:	Possible God class (WMC=76, ATFD=27, TCC=0.022058823529411766)
+src/main/java/nl/tudelft/jpacman/level/Level.java:28:	The class 'Level' has a Cyclomatic Complexity of 5 (Highest = 27).
+src/main/java/nl/tudelft/jpacman/level/Level.java:28:	The class 'Level' has a Modified Cyclomatic Complexity of 4 (Highest = 19).
+src/main/java/nl/tudelft/jpacman/level/Level.java:28:	The class 'Level' has a Standard Cyclomatic Complexity of 4 (Highest = 22).
+src/main/java/nl/tudelft/jpacman/level/Level.java:28:	This class has too many methods, consider refactoring it.
+src/main/java/nl/tudelft/jpacman/level/Level.java:38:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:44:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:49:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:49:	Private field 'npcs' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/level/Level.java:55:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:60:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:65:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:70:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:75:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:80:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:82:	Avoid excessively long variable names like coefficientVitesse
+src/main/java/nl/tudelft/jpacman/level/Level.java:82:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:82:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/Level.java:86:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/Level.java:98:	Avoid variables with short names like b
+src/main/java/nl/tudelft/jpacman/level/Level.java:98:	Parameter 'b' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:98:	Parameter 'ghosts' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:98:	Parameter 'startPositions' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:99:	Parameter 'collisionMap' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:107:	Local variable 'g' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:124:	Parameter 'observer' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:137:	Parameter 'observer' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:149:	Avoid variables with short names like p
+src/main/java/nl/tudelft/jpacman/level/Level.java:149:	Parameter 'p' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:158:	Local variable 'square' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:173:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	Avoid really long methods.
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	Found 'UR'-anomaly for variable 'occupant' (lines '182'-'298').
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	Parameter 'direction' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	Parameter 'unit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	The method 'move' has a Cyclomatic Complexity of 27.
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	The method 'move' has a Modified Cyclomatic Complexity of 19.
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	The method 'move' has a Standard Cyclomatic Complexity of 22.
+src/main/java/nl/tudelft/jpacman/level/Level.java:182:	The method move() has an NPath complexity of 16200
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	These nested if statements could be combined
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:193:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:195:	Deeply nested if..then statements are hard to read
+src/main/java/nl/tudelft/jpacman/level/Level.java:195:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:195:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:195:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:195:	These nested if statements could be combined
+src/main/java/nl/tudelft/jpacman/level/Level.java:197:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:201:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:201:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:201:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:203:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:210:	Local variable 'location' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:211:	Found 'DD'-anomaly for variable 'destination' (lines '211'-'223').
+src/main/java/nl/tudelft/jpacman/level/Level.java:211:	Found 'DD'-anomaly for variable 'destination' (lines '211'-'237').
+src/main/java/nl/tudelft/jpacman/level/Level.java:211:	Found 'DD'-anomaly for variable 'destination' (lines '211'-'253').
+src/main/java/nl/tudelft/jpacman/level/Level.java:211:	Found 'DD'-anomaly for variable 'destination' (lines '211'-'267').
+src/main/java/nl/tudelft/jpacman/level/Level.java:211:	Found 'DD'-anomaly for variable 'destination' (lines '211'-'285').
+src/main/java/nl/tudelft/jpacman/level/Level.java:211:	Found 'DD'-anomaly for variable 'destination' (lines '211'-'289').
+src/main/java/nl/tudelft/jpacman/level/Level.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:212:	Local variable 'researchBridge' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:216:	Local variable 'bridge' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:217:	Found 'DU'-anomaly for variable 'position' (lines '217'-'307').
+src/main/java/nl/tudelft/jpacman/level/Level.java:217:	Local variable 'position' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:217:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:223:	Found 'DD'-anomaly for variable 'destination' (lines '223'-'285').
+src/main/java/nl/tudelft/jpacman/level/Level.java:223:	Found 'DD'-anomaly for variable 'destination' (lines '223'-'289').
+src/main/java/nl/tudelft/jpacman/level/Level.java:226:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:229:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:237:	Found 'DD'-anomaly for variable 'destination' (lines '237'-'285').
+src/main/java/nl/tudelft/jpacman/level/Level.java:237:	Found 'DD'-anomaly for variable 'destination' (lines '237'-'289').
+src/main/java/nl/tudelft/jpacman/level/Level.java:242:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:245:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:253:	Found 'DD'-anomaly for variable 'destination' (lines '253'-'285').
+src/main/java/nl/tudelft/jpacman/level/Level.java:253:	Found 'DD'-anomaly for variable 'destination' (lines '253'-'289').
+src/main/java/nl/tudelft/jpacman/level/Level.java:258:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:267:	Found 'DD'-anomaly for variable 'destination' (lines '267'-'285').
+src/main/java/nl/tudelft/jpacman/level/Level.java:267:	Found 'DD'-anomaly for variable 'destination' (lines '267'-'289').
+src/main/java/nl/tudelft/jpacman/level/Level.java:272:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:283:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:283:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:283:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:285:	Found 'DD'-anomaly for variable 'destination' (lines '285'-'289').
+src/main/java/nl/tudelft/jpacman/level/Level.java:287:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:287:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:287:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:292:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:294:	Local variable 'occupants' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:294:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:296:	Local variable 'occupant' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:299:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:299:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:299:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:299:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:316:	Found 'UR'-anomaly for variable 'npc' (lines '316'-'330').
+src/main/java/nl/tudelft/jpacman/level/Level.java:316:	Parameter 'fruit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:316:	Parameter 'unit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:316:	The method 'fruitEffect' has a Cyclomatic Complexity of 11.
+src/main/java/nl/tudelft/jpacman/level/Level.java:316:	The method 'fruitEffect' has a Standard Cyclomatic Complexity of 11.
+src/main/java/nl/tudelft/jpacman/level/Level.java:318:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:320:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:324:	Found 'DU'-anomaly for variable 'abscisseUnit' (lines '324'-'386').
+src/main/java/nl/tudelft/jpacman/level/Level.java:324:	Local variable 'abscisseUnit' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:325:	Found 'DU'-anomaly for variable 'ordonneUnit' (lines '325'-'386').
+src/main/java/nl/tudelft/jpacman/level/Level.java:325:	Local variable 'ordonneUnit' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:327:	Local variable 'npc' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:330:	Local variable 'location' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:330:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:331:	Local variable 'abscisseNpc' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:332:	Local variable 'ordonneNpc' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:335:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:337:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:341:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:345:	Avoid if (x != y) ..; else ..;
+src/main/java/nl/tudelft/jpacman/level/Level.java:345:	Avoid using Literals in Conditional Statements
+src/main/java/nl/tudelft/jpacman/level/Level.java:352:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:359:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:360:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:367:	Avoid if (x != y) ..; else ..;
+src/main/java/nl/tudelft/jpacman/level/Level.java:367:	Avoid using Literals in Conditional Statements
+src/main/java/nl/tudelft/jpacman/level/Level.java:374:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:379:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:380:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:423:	Found 'UR'-anomaly for variable 'npc' (lines '423'-'429').
+src/main/java/nl/tudelft/jpacman/level/Level.java:426:	Local variable 'npc' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:428:	Local variable 'service' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:429:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/level/Level.java:429:	Avoid instantiation through private constructors from outside of the constructors class.
+src/main/java/nl/tudelft/jpacman/level/Level.java:429:	This statement may have some unnecessary parentheses
+src/main/java/nl/tudelft/jpacman/level/Level.java:429:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:429:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:429:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:429:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/Level.java:438:	Found 'UR'-anomaly for variable 'e' (lines '438'-'442').
+src/main/java/nl/tudelft/jpacman/level/Level.java:440:	Local variable 'e' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:442:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:459:	Found 'UR'-anomaly for variable 'o' (lines '459'-'462').
+src/main/java/nl/tudelft/jpacman/level/Level.java:461:	Local variable 'o' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:466:	Local variable 'o' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:468:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/level/Level.java:468:	Avoid variables with short names like pc
+src/main/java/nl/tudelft/jpacman/level/Level.java:468:	Local variable 'pc' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:481:	Found 'UR'-anomaly for variable 'p' (lines '481'-'483').
+src/main/java/nl/tudelft/jpacman/level/Level.java:482:	Local variable 'p' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:484:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/Level.java:495:	Found 'UR'-anomaly for variable 'u' (lines '495'-'501').
+src/main/java/nl/tudelft/jpacman/level/Level.java:496:	Avoid variables with short names like b
+src/main/java/nl/tudelft/jpacman/level/Level.java:496:	Local variable 'b' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:497:	Found 'DD'-anomaly for variable 'pellets' (lines '497'-'502').
+src/main/java/nl/tudelft/jpacman/level/Level.java:498:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:499:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:500:	Local variable 'u' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:500:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:500:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/Level.java:502:	Found 'DD'-anomaly for variable 'pellets' (lines '502'-'502').
+src/main/java/nl/tudelft/jpacman/level/Level.java:515:	To be compliant to J2EE, a webapp should not use any thread.
+src/main/java/nl/tudelft/jpacman/level/Level.java:520:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:520:	Private field 'service' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/level/Level.java:525:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Level.java:525:	Private field 'npc' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/level/Level.java:535:	Avoid variables with short names like n
+src/main/java/nl/tudelft/jpacman/level/Level.java:535:	Avoid variables with short names like s
+src/main/java/nl/tudelft/jpacman/level/Level.java:535:	Parameter 'n' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:535:	Parameter 's' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:542:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/Level.java:544:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:546:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:546:	These nested if statements could be combined
+src/main/java/nl/tudelft/jpacman/level/Level.java:549:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:550:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/Level.java:554:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/nl/tudelft/jpacman/level/Level.java:556:	Local variable 'nextMove' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Level.java:561:	Local variable 'interval' could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:31:	This class has too many methods, consider refactoring it.
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:33:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:34:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:35:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:36:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:37:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:47:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:52:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:57:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:67:	Parameter 'ghostFactory' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:67:	Parameter 'spriteStore' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:74:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:85:	Parameter 'board' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:85:	Parameter 'ghosts' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:85:	Parameter 'startPositions' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:89:	Local variable 'collisionMap' could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:106:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:108:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:110:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:112:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:114:	Avoid instantiation through private constructors from outside of the constructors class.
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:233:	Parameter 'ghostSprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:240:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/LevelFactory.java:245:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:21:	The class 'MapParser' has a Cyclomatic Complexity of 4 (Highest = 14).
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:21:	The class 'MapParser' has a Standard Cyclomatic Complexity of 4 (Highest = 14).
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:41:	Parameter 'boardFactory' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:41:	Parameter 'levelFactory' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:47:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:72:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:72:	Parameter 'map' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:74:	Local variable 'width' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:75:	Local variable 'height' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:77:	Local variable 'grid' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:79:	Local variable 'ghosts' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:80:	Local variable 'startPositions' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:84:	Local variable 'board' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:88:	Parameter 'ghosts' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:88:	Parameter 'grid' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:88:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:88:	Parameter 'map' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:88:	Parameter 'startPositions' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:88:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:93:	Avoid variables with short names like c
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:93:	Local variable 'c' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Avoid variables with short names like c
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Parameter 'c' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Parameter 'ghosts' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Parameter 'startPositions' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	The method 'addSquare' has a Cyclomatic Complexity of 14.
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:99:	The method 'addSquare' has a Standard Cyclomatic Complexity of 14.
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:110:	Local variable 'pelletSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:112:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:115:	Local variable 'ghostSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:119:	Local variable 'playerSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:124:	Local variable 'granateSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:126:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:129:	Local variable 'pepperSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:131:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:134:	Local variable 'potatoSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:136:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:140:	Local variable 'tomatoSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:142:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:146:	Local variable 'fishSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:148:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:152:	Local variable 'trapSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:154:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:157:	Local variable 'teleporterSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:159:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:162:	Local variable 'bridgeSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:164:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:173:	Parameter 'ghosts' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:175:	Local variable 'ghostSquare' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:176:	Local variable 'ghost' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:178:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:182:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:193:	Parameter 'text' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:198:	Local variable 'height' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:199:	Local variable 'width' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:199:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:201:	Found 'DD'-anomaly for variable 'map' (lines '201'-'204').
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:204:	Found 'DD'-anomaly for variable 'map' (lines '204'-'204').
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:204:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:215:	Found 'UR'-anomaly for variable 'line' (lines '215'-'235').
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:215:	Parameter 'text' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:227:	Local variable 'width' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:227:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:234:	Local variable 'line' could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:242:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:252:	Parameter 'source' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/MapParser.java:256:	Local variable 'lines' could be declared final
+src/main/java/nl/tudelft/jpacman/level/Pellet.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Pellet.java:28:	It is a good practice to call super() in a constructor
+src/main/java/nl/tudelft/jpacman/level/Pellet.java:28:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Pellet.java:28:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Pellet.java:42:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/Player.java:19:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/Player.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Player.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Player.java:33:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Player.java:49:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/Player.java:70:	It is a good practice to call super() in a constructor
+src/main/java/nl/tudelft/jpacman/level/Player.java:70:	Parameter 'deathAnimation' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:70:	Parameter 'name' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:70:	Parameter 'spriteMap' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:75:	Overridable method 'setName' called during object construction
+src/main/java/nl/tudelft/jpacman/level/Player.java:87:	Parameter 'fruit' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:120:	Found 'DD'-anomaly for variable 'bool' (lines '120'-'123').
+src/main/java/nl/tudelft/jpacman/level/Player.java:120:	Found 'DD'-anomaly for variable 'bool' (lines '120'-'126').
+src/main/java/nl/tudelft/jpacman/level/Player.java:156:	Parameter 'invisibles' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:166:	Parameter 'stuns' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:188:	Parameter 'isAlive' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:208:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/Player.java:210:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/Player.java:222:	Parameter 'points' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:233:	Parameter 'spawns' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:249:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/Player.java:254:	Parameter 'name' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/Player.java:254:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:13:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:16:	Comment is too large: Line too long
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:24:	Each class should declare at least one constructor
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:28:	Parameter 'collidedOn' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:28:	Parameter 'mover' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:28:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:34:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:36:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:54:	Parameter 'collidedOn' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:54:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:74:	Parameter 'collidedOn' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:74:	Parameter 'ghost' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:95:	Parameter 'ghost' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:95:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:100:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:100:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:100:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:100:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:102:	Local variable 'playerBridge' could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:103:	Local variable 'ghostBridge' could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:121:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:121:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:123:	Avoid variables with short names like l
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:123:	Local variable 'l' could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:128:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:131:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:134:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:137:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:152:	Parameter 'pellet' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java:152:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:25:	Parameter 'spriteStore' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:43:	Parameter 'name' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:45:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:45:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:46:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:47:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:48:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:49:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:49:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:50:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:51:	Avoid using if statements without curly braces
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:51:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java:52:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:16:	Each class should declare at least one constructor
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:16:	The class 'ChoiceMonster' has a Cyclomatic Complexity of 4 (Highest = 12).
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:16:	The class 'ChoiceMonster' has a Modified Cyclomatic Complexity of 4 (Highest = 12).
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:16:	The class 'ChoiceMonster' has a Standard Cyclomatic Complexity of 4 (Highest = 12).
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:16:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:18:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:19:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:20:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:21:	Avoid using redundant field initializer for 'numPlayer'
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:21:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:22:	Private field 'panel' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:22:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:23:	Avoid variables with short names like j
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:23:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:24:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:24:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:25:	Avoid variables with short names like l
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:25:	Private field 'l' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:25:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:49:	Local variable 'panel2' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:73:	Avoid using if...else statements without curly braces
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:75:	Avoid using if...else statements without curly braces
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:105:	Avoid variables with short names like e
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:105:	Parameter 'e' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:105:	The method 'actionPerformed' has a Cyclomatic Complexity of 12.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:105:	The method 'actionPerformed' has a Modified Cyclomatic Complexity of 12.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:105:	The method 'actionPerformed' has a Standard Cyclomatic Complexity of 12.
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:105:	The method actionPerformed() has an NPath complexity of 648
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:106:	Local variable 'source' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:110:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:122:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:133:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:135:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:145:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:147:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:158:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/multiplayers/ChoiceMonster.java:170:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:9:	Each class should declare at least one constructor
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:9:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:12:	Avoid using redundant field initializer for 'numeroJoueur'
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:12:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:14:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:16:	Local variable 'panel' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:17:	Avoid variables with short names like l
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:17:	Local variable 'l' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:24:	Local variable 'joueur1' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:24:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:34:	Local variable 'joueur2' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:34:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:44:	Local variable 'joueur4' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:44:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:54:	Local variable 'joueur3' could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Classement.java:54:	Potential violation of Law of Demeter (static property access)
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:6:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:8:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:9:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:10:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:11:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:11:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:12:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:14:	Parameter 'name' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:14:	Parameter 'numero' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:14:	Parameter 'score' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:14:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:21:	Document empty constructor
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:21:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:22:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:25:	Parameter 'numero' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:25:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:28:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:31:	Parameter 'score' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:31:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:34:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:34:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:37:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:37:	Parameter 'listJoueur' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:37:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:40:	Avoid variables with short names like n
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:40:	Parameter 'n' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:40:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:44:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:48:	Avoid variables with short names like j
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:48:	Parameter 'j' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:48:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:52:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:56:	Parameter 'name' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/multiplayers/Joueur.java:56:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/NPC.java:12:	Abstract classes should be named AbstractXXX
+src/main/java/nl/tudelft/jpacman/npc/NPC.java:12:	Avoid short class names like NPC
+src/main/java/nl/tudelft/jpacman/npc/NPC.java:12:	Each class should declare at least one constructor
+src/main/java/nl/tudelft/jpacman/npc/NPC.java:18:	Field isDead has the same name as a method
+src/main/java/nl/tudelft/jpacman/npc/NPC.java:23:	Field trap has the same name as a method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:12:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:60:	Parameter 'spriteMap' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:70:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:76:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:93:	Local variable 'target' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:93:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:97:	Local variable 'direct' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:98:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:98:	Consider simply returning the value vs storing it in local variable 'direct'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:101:	Local variable 'path' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:103:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:104:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:104:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:105:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:105:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:107:	Local variable 'direct' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java:108:	Consider simply returning the value vs storing it in local variable 'direct'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:13:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:63:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:64:	Non-static initializers are confusing
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:78:	Parameter 'spriteMap' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:88:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:92:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:111:	Local variable 'target' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:111:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:114:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:117:	Local variable 'path' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:119:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:120:	Local variable 'direct' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:121:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:122:	Local variable 'oppositeDir' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:123:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:123:	Consider simply returning the value vs storing it in local variable 'oppositeDir'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:125:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:127:	Local variable 'dir' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java:128:	Consider simply returning the value vs storing it in local variable 'dir'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:19:	Abstract classes should be named AbstractXXX
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:27:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:29:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:29:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:37:	It is a good practice to call super() in a constructor
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:37:	Parameter 'spriteMap' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:46:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:53:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:60:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:67:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:67:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:84:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:84:	These nested if statements could be combined
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:96:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:108:	Found 'UR'-anomaly for variable 'd' (lines '108'-'112').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:109:	Found 'DU'-anomaly for variable 'square' (lines '109'-'121').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:109:	Local variable 'square' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:110:	Local variable 'directions' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:111:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:112:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:112:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:117:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:119:	Avoid variables with short names like i
+src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java:119:	Local variable 'i' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/GhostFactory.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/npc/ghost/GhostFactory.java:22:	Parameter 'spriteStore' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:13:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:44:	Avoid short class names like Inky
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:46:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:52:	Avoid excessively long variable names like INTERVAL_VARIATION
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:65:	Parameter 'spriteMap' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:74:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:78:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:107:	Local variable 'blinky' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:109:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:109:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:110:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:110:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:113:	Local variable 'player' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:115:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:115:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:116:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:116:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:119:	Found 'DU'-anomaly for variable 'targetDirection' (lines '119'-'145').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:119:	Local variable 'targetDirection' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:119:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:120:	Found 'DD'-anomaly for variable 'playerDestination' (lines '120'-'122').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:122:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:125:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:125:	Found 'DD'-anomaly for variable 'destination' (lines '125'-'134').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:125:	Found 'DU'-anomaly for variable 'destination' (lines '125'-'145').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:126:	Local variable 'firstHalf' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:129:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:129:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:130:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:130:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:133:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:134:	Found 'DD'-anomaly for variable 'destination' (lines '134'-'134').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:137:	Local variable 'path' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:140:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:140:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:140:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:141:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:141:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:143:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:143:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java:144:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:22:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:41:	Avoid variables with short names like to
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:41:	Parameter 'from' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:41:	Parameter 'to' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:42:	Parameter 'traveller' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:43:	Use equals() to compare object references.
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:44:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:48:	Found 'DU'-anomaly for variable 'visited' (lines '48'-'61').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:48:	Local variable 'visited' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:49:	Avoid instantiation through private constructors from outside of the constructors class.
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:51:	Local variable 'node' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:52:	Local variable 'square' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:53:	Use equals() to compare object references.
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:54:	Local variable 'path' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:55:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:55:	Consider simply returning the value vs storing it in local variable 'path'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:63:	Found 'UR'-anomaly for variable 'direct' (lines '63'-'66').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:63:	Parameter 'targets' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:63:	Parameter 'traveller' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:64:	Parameter 'node' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:64:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:64:	Parameter 'visited' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:65:	Local variable 'direct' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:66:	Local variable 'target' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:68:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:70:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:70:	Avoid instantiation through private constructors from outside of the constructors class.
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:75:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:87:	Found 'UR'-anomaly for variable 'direct' (lines '87'-'102').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:87:	Parameter 'type' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:88:	Parameter 'currentLocation' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:89:	Local variable 'toDo' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:90:	Found 'DU'-anomaly for variable 'visited' (lines '90'-'109').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:90:	Local variable 'visited' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:95:	Local variable 'square' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:96:	Local variable 'unit' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:98:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:101:	Local variable 'direct' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:102:	Local variable 'newTarget' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:102:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:111:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:121:	Found 'UR'-anomaly for variable 'unit' (lines '121'-'123').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:121:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:121:	Parameter 'type' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:122:	Local variable 'unit' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:124:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:135:	Avoid short class names like Node
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:153:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:165:	Parameter 'direct' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:165:	Parameter 'node' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:165:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:201:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:203:	Local variable 'path' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java:204:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:13:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:52:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:58:	Avoid excessively long variable names like INTERVAL_VARIATION
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:71:	Parameter 'spriteMap' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:79:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:83:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:99:	Local variable 'player' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:101:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:101:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:102:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:102:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:105:	Found 'DU'-anomaly for variable 'targetDirection' (lines '105'-'119').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:105:	Local variable 'targetDirection' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:105:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:106:	Found 'DD'-anomaly for variable 'destination' (lines '106'-'108').
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:111:	Local variable 'path' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:113:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:114:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:114:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:114:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:115:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:115:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:117:	Avoid variables with short names like d
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:117:	Local variable 'd' could be declared final
+src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java:118:	Consider simply returning the value vs storing it in local variable 'd'
+src/main/java/nl/tudelft/jpacman/npc/ghost/package-info.java:1:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:14:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:20:	Avoid using implementation types like 'HashMap'; use the interface instead
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:20:	Private field 'listUnite' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:22:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:22:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:33:	Parameter 'unite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:35:	Found 'DD'-anomaly for variable 'position' (lines '35'-'39').
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:35:	Found 'DD'-anomaly for variable 'position' (lines '35'-'42').
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:35:	Found 'DD'-anomaly for variable 'position' (lines '35'-'45').
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:35:	Found 'DD'-anomaly for variable 'position' (lines '35'-'48').
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:64:	Parameter 'unite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:76:	Parameter 'unite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:87:	Parameter 'unite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:89:	Local variable 'set' could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:90:	Local variable 'iterator' could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:90:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:93:	Local variable 'mentry' could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:94:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:94:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/specialcase/Bridge.java:96:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:8:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:23:	It is a good practice to call super() in a constructor
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:23:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:23:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:29:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:49:	Local variable 'date' could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:51:	Local variable 'diffSecond' could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:51:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:51:	Useless parentheses.
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:52:	Found 'DD'-anomaly for variable 'bool' (lines '52'-'55').
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:52:	Found 'DD'-anomaly for variable 'bool' (lines '52'-'58').
+src/main/java/nl/tudelft/jpacman/specialcase/SpecialSquare.java:53:	Avoid using Literals in Conditional Statements
+src/main/java/nl/tudelft/jpacman/specialcase/Teleporter.java:5:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/Teleporter.java:8:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Teleporter.java:8:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/Trap.java:4:	Avoid short class names like Trap
+src/main/java/nl/tudelft/jpacman/specialcase/Trap.java:4:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/specialcase/Trap.java:7:	Parameter 'sprite' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/specialcase/Trap.java:7:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:36:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:46:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:48:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:59:	Parameter 'delay' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:59:	Parameter 'frames' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:59:	Parameter 'loop' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:63:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:75:	Parameter 'delay' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:75:	Parameter 'frames' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:75:	Parameter 'loop' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:76:	Parameter 'isAnimating' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:93:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:105:	Parameter 'isAnimating' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Avoid variables with short names like g
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Parameter 'g' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:119:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:125:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:125:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:125:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:125:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:125:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:125:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:125:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:127:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:134:	Local variable 'now' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:151:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:156:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java:157:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:11:	Each class should declare at least one constructor
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Avoid variables with short names like g
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Parameter 'g' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:14:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:19:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:19:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:19:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:19:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:19:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:19:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:19:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:24:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java:29:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:28:	Parameter 'img' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Avoid variables with short names like g
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Parameter 'g' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:33:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:39:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:39:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:39:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:39:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:39:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:39:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:39:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:41:	Local variable 'newImage' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:42:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:44:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:49:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:49:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:49:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:49:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:54:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:64:	Parameter 'height' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:64:	Parameter 'width' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:65:	Avoid variables with short names like gc
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:65:	Local variable 'gc' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:65:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:65:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:68:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:72:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java:77:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:15:	Each class should declare at least one constructor
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:32:	Avoid excessively long variable names like PACMAN_ANIMATION_FRAMES
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:37:	Avoid excessively long variable names like PACMAN_DEATH_FRAMES
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:42:	Avoid excessively long variable names like GHOST_ANIMATION_FRAMES
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:60:	Local variable 'resource' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:62:	Local variable 'baseImage' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:63:	Local variable 'animation' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:69:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:78:	Parameter 'frames' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:78:	Parameter 'resource' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:79:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:79:	Local variable 'sprite' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:81:	Found 'DU'-anomaly for variable 'baseImage' (lines '81'-'92').
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:81:	Local variable 'baseImage' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:83:	Local variable 'directionSprite' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:85:	Local variable 'animation' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:88:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:101:	Parameter 'color' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:104:	Local variable 'resource' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:104:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java:209:	Parameter 'resource' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/Sprite.java:12:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/Sprite.java:26:	Avoid variables with short names like g
+src/main/java/nl/tudelft/jpacman/sprite/Sprite.java:26:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/Sprite.java:26:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/Sprite.java:28:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/Sprite.java:42:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/sprite/Sprite.java:42:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:22:	Private field 'spriteMap' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:31:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:42:	Parameter 'resource' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:51:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:60:	Parameter 'resource' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:66:	Local variable 'image' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:71:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:84:	Parameter 'baseImage' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:84:	Parameter 'frames' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:85:	Parameter 'delay' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:85:	Parameter 'loop' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:89:	Found 'DU'-anomaly for variable 'frameWidth' (lines '89'-'98').
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:89:	Local variable 'frameWidth' could be declared final
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:91:	Found 'DD'-anomaly for variable 'animation' (lines '91'-'93').
+src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java:93:	Found 'DD'-anomaly for variable 'animation' (lines '93'-'93').
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:49:	Parameter 'game' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:54:	Local variable 'board' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:56:	Avoid variables with short names like w
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:56:	Local variable 'w' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:57:	Avoid variables with short names like h
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:57:	Local variable 'h' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:59:	Local variable 'size' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:65:	Avoid variables with short names like g
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:65:	Parameter 'g' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:65:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:67:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:67:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:70:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:80:	Avoid variables with short names like g
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:80:	Parameter 'board' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:80:	Parameter 'g' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:80:	Parameter 'window' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:81:	Found 'DU'-anomaly for variable 'cellW' (lines '81'-'95').
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:81:	Local variable 'cellW' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:82:	Found 'DU'-anomaly for variable 'cellH' (lines '82'-'95').
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:82:	Local variable 'cellH' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:89:	Local variable 'cellX' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:90:	Local variable 'cellY' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:91:	Local variable 'square' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:97:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Avoid variables with short names like g
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Avoid variables with short names like h
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Avoid variables with short names like w
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Avoid variables with short names like x
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Avoid variables with short names like y
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Found 'UR'-anomaly for variable 'unit' (lines '114'-'117').
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Parameter 'g' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Parameter 'h' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Parameter 'square' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Parameter 'w' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Parameter 'x' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:114:	Parameter 'y' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:115:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:116:	Local variable 'unit' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java:117:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:28:	Found 'UR'-anomaly for variable 'caption' (lines '28'-'34').
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:34:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:34:	Local variable 'button' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:35:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:38:	Avoid variables with short names like e
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:38:	Parameter 'e' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:38:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:23:	Parameter 'keyMappings' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:29:	Avoid variables with short names like e
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:29:	Parameter 'e' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:29:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:31:	Local variable 'action' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:38:	Avoid variables with short names like e
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:38:	Parameter 'e' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:38:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:43:	Avoid variables with short names like e
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:43:	Parameter 'e' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java:43:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:16:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:46:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:51:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:54:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:54:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:60:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:75:	Avoid variables with short names like sf
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:75:	Parameter 'sf' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:83:	Local variable 'keys' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:86:	Local variable 'buttonPanel' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:100:	Local variable 'contentPanel' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:117:	Local variable 'service' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:120:	To be compliant to J2EE, a webapp should not use any thread.
+src/main/java/nl/tudelft/jpacman/ui/PacManUI.java:123:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:15:	This class has too many methods, consider refactoring it.
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:26:	fieldCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:30:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:35:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:40:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:45:	Avoid using redundant field initializer for 'scoreFormatter'
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:45:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:86:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:104:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:113:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:120:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:129:	Parameter 'action' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:129:	Parameter 'keyCode' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:137:	Comment is too large: Too many lines
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:146:	Parameter 'action' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:146:	Parameter 'caption' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:176:	Avoid variables with short names like sf
+src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java:176:	Parameter 'sf' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:36:	Avoid excessively long variable names like DEFAULT_SCORE_FORMATTER
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:40:	Avoid variables with short names like p
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:40:	Parameter 'p' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:40:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:49:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:57:	Parameter 'players' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:64:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:67:	Local variable 'p' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:68:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:68:	Local variable 'scoreLabel' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:77:	Found 'UR'-anomaly for variable 'p' (lines '77'-'80').
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:78:	Local variable 'p' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:79:	Found 'DD'-anomaly for variable 'score' (lines '79'-'81').
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:84:	Prefer StringBuffer over += for concatenating strings
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:99:	Avoid variables with short names like p
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:106:	Avoid variables with short names like sf
+src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java:106:	Parameter 'sf' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:16:	headerCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:29:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:34:	Avoid excessively long variable names like DEFAULT_SCORE_FORMATTER
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:37:	Parameter 'player' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:37:	publicMethodCommentRequirement Required
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:41:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:53:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:61:	Parameter 'players' is not assigned and could be declared final
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:68:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:71:	Local variable 'player' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:72:	Avoid instantiating new objects inside loops
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:72:	Local variable 'stateLabel' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:81:	Found 'UR'-anomaly for variable 'p' (lines '81'-'86').
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:83:	Local variable 'p' could be declared final
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:85:	Found 'DD'-anomaly for variable 'score' (lines '85'-'87').
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:89:	Prefer StringBuffer over += for concatenating strings
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:90:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:105:	Avoid variables with short names like p
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:112:	Avoid variables with short names like sf
+src/main/java/nl/tudelft/jpacman/ui/StatePanel.java:112:	Parameter 'sf' is not assigned and could be declared final
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:14:	Comment is too large: Too many lines
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:32:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:32:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:60:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:61:	Local variable 'game' could be declared final
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:62:	Local variable 'player' could be declared final
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:62:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:62:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:68:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:99:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:101:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:102:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:112:	Parameter 'dir' is not assigned and could be declared final
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:112:	Parameter 'game' is not assigned and could be declared final
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:112:	Parameter 'numSteps' is not assigned and could be declared final
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:113:	Found 'DU'-anomaly for variable 'player' (lines '113'-'117').
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:113:	Local variable 'player' could be declared final
+src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java:113:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/board/BasicSquare.java:20:	Parameter 'unit' is not assigned and could be declared final
+src/test/java/nl/tudelft/jpacman/board/BasicSquare.java:20:	publicMethodCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BasicSquare.java:25:	publicMethodCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BasicUnit.java:20:	publicMethodCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:15:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:27:	Local variable 'sprites' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:35:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:36:	Avoid variables with short names like s
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:36:	Local variable 's' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:37:	Local variable 'grid' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:49:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:50:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:50:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:51:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:51:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:52:	Local variable 'grid' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:62:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:63:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:63:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:64:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:64:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:65:	Local variable 'grid' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:75:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:76:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:76:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:77:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:77:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:78:	Local variable 'grid' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:88:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:89:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:89:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:90:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:90:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java:91:	Local variable 'grid' could be declared final
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:14:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:16:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:18:	Private field 'x0y0' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:18:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:19:	Private field 'x0y1' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:19:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:20:	Private field 'x0y2' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:20:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:21:	Private field 'x1y0' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:21:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:22:	Private field 'x1y1' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:22:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:23:	Private field 'x1y2' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:23:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:25:	This final field could be made static
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:25:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:26:	This final field could be made static
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:26:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:33:	Found 'DD'-anomaly for variable 'grid' (lines '33'-'34').
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:34:	Found 'DD'-anomaly for variable 'grid' (lines '34'-'35').
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:35:	Found 'DD'-anomaly for variable 'grid' (lines '35'-'36').
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:36:	Found 'DD'-anomaly for variable 'grid' (lines '36'-'37').
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:37:	Found 'DD'-anomaly for variable 'grid' (lines '37'-'38').
+src/test/java/nl/tudelft/jpacman/board/BoardTest.java:38:	Found 'DD'-anomaly for variable 'grid' (lines '38'-'39').
+src/test/java/nl/tudelft/jpacman/board/OccupantTest.java:16:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/board/OccupantTest.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/OccupantTest.java:45:	Local variable 'target' could be declared final
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:16:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:36:	Local variable 'occupant' could be declared final
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:48:	Local variable 'occupant' could be declared final
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:60:	Avoid variables with short names like o1
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:60:	Local variable 'o1' could be declared final
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:61:	Avoid variables with short names like o2
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:61:	Local variable 'o2' could be declared final
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:65:	Local variable 'occupantsAsArray' could be declared final
+src/test/java/nl/tudelft/jpacman/board/SquareTest.java:65:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:1:	Too many static imports may lead to messy code
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:23:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:33:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:38:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:43:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:48:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:53:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:61:	Avoid using final local variables, turn them into fields
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:64:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:108:	The String literal "PMD.JUnitTestsShouldIncludeAssert" appears 4 times in this file; the first occurrence is on line 108
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:110:	Avoid variables with short names like p
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:110:	Local variable 'p' could be declared final
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:112:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:121:	Avoid variables with short names like p
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:121:	Local variable 'p' could be declared final
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:124:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:134:	Avoid variables with short names like p1
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:134:	Local variable 'p1' could be declared final
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:135:	Avoid variables with short names like p2
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:135:	Local variable 'p2' could be declared final
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:138:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:148:	Avoid variables with short names like p1
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:148:	Local variable 'p1' could be declared final
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:149:	Avoid variables with short names like p2
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:149:	Local variable 'p2' could be declared final
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:150:	Avoid variables with short names like p3
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:150:	Local variable 'p3' could be declared final
+src/test/java/nl/tudelft/jpacman/level/LevelTest.java:154:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:5:	No need to import a type that lives in the same package
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:8:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:8:	headerCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:10:	Avoid variables with short names like j
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:10:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:10:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:11:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:11:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:11:	Private field 'listJ' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:11:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:14:	publicMethodCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:20:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:20:	publicMethodCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:28:	publicMethodCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/multiplayers/JoueurTest.java:29:	Local variable 'joueur' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:1:	Too many static imports may lead to messy code
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:34:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:39:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:46:	Local variable 'sprites' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:56:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:56:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:56:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:57:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:57:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:58:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:58:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:59:	Local variable 'path' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:69:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:69:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:69:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:72:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:72:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:73:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:73:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:74:	Local variable 'path' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:84:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:84:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:84:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:87:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:87:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:88:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:88:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:89:	Local variable 'path' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:99:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:99:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:99:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:101:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:101:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:101:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:102:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:102:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:102:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:103:	Local variable 'path' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:114:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:114:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:114:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:116:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:116:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:117:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:117:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:117:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:118:	Local variable 'path' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:129:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:129:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:129:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:132:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:132:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:133:	Avoid variables with short names like s2
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:133:	Local variable 's2' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:133:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:134:	Local variable 'result' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:134:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:143:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:143:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:143:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:144:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:144:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:144:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:145:	Local variable 'unit' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:157:	Avoid variables with short names like b
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:157:	Local variable 'b' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:157:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:157:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:157:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:158:	Avoid variables with short names like s1
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:158:	Local variable 's1' could be declared final
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:158:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java:159:	Local variable 'unit' could be declared final
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:17:	Each class should declare at least one constructor
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:19:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:20:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:22:	This final field could be made static
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:22:	fieldCommentRequirement Required
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:70:	Local variable 'animation' could be declared final
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:80:	Local variable 'animation' could be declared final
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:90:	Local variable 'split' could be declared final
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:99:	Local variable 'split' could be declared final
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:104:	Comment is too large: Line too long
+src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java:108:	Local variable 'split' could be declared final

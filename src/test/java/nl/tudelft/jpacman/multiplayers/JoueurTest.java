@@ -8,7 +8,7 @@ import org.junit.Test;
 public class JoueurTest {
 	
 	private Joueur j;
-	private ArrayList<Joueur> listJ=new ArrayList<Joueur>();
+	private ArrayList listJ=new ArrayList<Joueur>();
 	
 	@Before
 	public void init()

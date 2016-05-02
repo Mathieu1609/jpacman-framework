@@ -44,7 +44,7 @@ public class Blinky extends Ghost {
 	 * The variation in intervals, this makes the ghosts look more dynamic and
 	 * less predictable.
 	 */
-	private static final int INTERVAL_VARIATION = 50;
+	private static final int INTERVAL_VAR = 50;
 
 	/**
 	 * The base movement interval.
@@ -70,7 +70,7 @@ public class Blinky extends Ghost {
 	public long getInterval() {
 		// TODO Blinky should speed up when there are a few pellets left, but he
 		// has no way to find out how many there are.
-		return MOVE_INTERVAL + new Random().nextInt(INTERVAL_VARIATION);
+		return MOVE_INTERVAL + new Random().nextInt(INTERVAL_VAR);
 	}
 
 	/**
@@ -94,8 +94,8 @@ public class Blinky extends Ghost {
 				.getSquare();
 
 		if (target == null) {
-			Direction d = randomMove();
-			return d;
+			Direction direct = randomMove();
+			return direct;
 		}
 		
 		List<Direction> path = Navigation.shortestPath(getSquare(), target,
@@ -104,8 +104,8 @@ public class Blinky extends Ghost {
 			Direction d = path.get(0);
 			return d;
 		}
-		Direction d = randomMove();
-		return d;
+		Direction direct= randomMove();
+		return direct;
 	}
 
 

@@ -27,7 +27,7 @@ public class ScoreStrategy extends ControlStrategy{
 			return Integer.MIN_VALUE;
 		int score = 0;
 		int dist = 1;
-		if (dir == last_dir)
+		if (dir == lastdir)
 			score = score + 5;
 		for (Direction direction : Direction.values())
 		{
@@ -60,28 +60,28 @@ public class ScoreStrategy extends ControlStrategy{
 	}
 	public Direction nextMove()
 	{
-		if (!isIntersection(player.getSquare()) && last_dir != null) //comment to improve AI
-			return last_dir; //comment to improve AI
-		Direction[] dirs_list = Direction.values();
-		int[] scores_list = new int[dirs_list.length];
+		if (!isIntersection(player.getSquare()) && lastdir != null) //comment to improve AI
+			return lastdir; //comment to improve AI
+		Direction[] dirslist = Direction.values();
+		int[] scoreslist = new int[dirslist.length];
 		int max = Integer.MIN_VALUE;
-		for (int i=0; i<dirs_list.length; i++)
+		for (int i=0; i<dirslist.length; i++)
 		{
-			scores_list[i] = score(dirs_list[i]);
-			if (scores_list[i] > max)
+			scoreslist[i] = score(dirslist[i]);
+			if (scoreslist[i] > max)
 			{
-				max = scores_list[i];
+				max = scoreslist[i];
 			}
 		}
 		ArrayList<Integer> best = new ArrayList<Integer>();
-		for (int i=0; i<scores_list.length; i++)
+		for (int i=0; i<scoreslist.length; i++)
 		{
-			if (scores_list[i] == max)
+			if (scoreslist[i] == max)
 			{
 				best.add(i);
 			}
 		}
 		Random rand = new Random();
-		return dirs_list[best.get(rand.nextInt(best.size()))];
+		return dirslist[best.get(rand.nextInt(best.size()))];
 	}
 }

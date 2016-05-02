@@ -21,8 +21,8 @@ public class Classement extends JFrame {
 		if(l.cM.jBlinky!=null )
 		{
 			numeroJoueur++;
-			JLabel Joueur1= new JLabel("Blinky,joueur"+numeroJoueur +",Votre score est :"+l.cM.jBlinky.getScore());
-			panel.add(Joueur1);
+			JLabel joueur1= new JLabel("Blinky,joueur"+numeroJoueur +",Votre score est :"+l.cM.jBlinky.getScore());
+			panel.add(joueur1);
 		}
 		/**
 		 * 
@@ -31,8 +31,8 @@ public class Classement extends JFrame {
 		if(l.cM.jPinky!=null )
 		{
 			numeroJoueur++;
-			JLabel Joueur2= new JLabel("Pinky,joueur"+numeroJoueur +", Votre score est :" +l.cM.jPinky.getScore());
-			panel.add(Joueur2);
+			JLabel joueur2= new JLabel("Pinky,joueur"+numeroJoueur +", Votre score est :" +l.cM.jPinky.getScore());
+			panel.add(joueur2);
 		}
 		/**
 		 *  check if clyde is différent of null, if yes, create label clyde 
@@ -41,8 +41,8 @@ public class Classement extends JFrame {
 		if(l.cM.jClyde!=null )
 		{
 			numeroJoueur++;
-			JLabel Joueur4= new JLabel("Clyde,joueur"+numeroJoueur +", Votre score est :" +l.cM.jClyde.getScore());
-			panel.add(Joueur4);
+			JLabel joueur4= new JLabel("Clyde,joueur"+numeroJoueur +", Votre score est :" +l.cM.jClyde.getScore());
+			panel.add(joueur4);
 		}
 		/**
 		 * 
@@ -51,8 +51,8 @@ public class Classement extends JFrame {
 		if(l.cM.jInky!=null )
 		{
 			numeroJoueur++;			
-			JLabel Joueur3= new JLabel("Inky,joueur"+numeroJoueur +", Votre score est :"+l.cM.jInky.getScore());
-			panel.add(Joueur3);
+			JLabel joueur3= new JLabel("Inky,joueur"+numeroJoueur +", Votre score est :"+l.cM.jInky.getScore());
+			panel.add(joueur3);
 		}
 		
 				

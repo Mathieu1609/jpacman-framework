@@ -3,8 +3,6 @@
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
-
 import nl.tudelft.jpacman.board.BoardFactory;
 import nl.tudelft.jpacman.board.Direction;
 import nl.tudelft.jpacman.controls.ControlStrategy;
@@ -14,7 +12,6 @@ import nl.tudelft.jpacman.game.GameFactory;
 import nl.tudelft.jpacman.level.Level;
 import nl.tudelft.jpacman.level.LevelFactory;
 import nl.tudelft.jpacman.level.MapParser;
-import nl.tudelft.jpacman.level.Player;
 import nl.tudelft.jpacman.level.PlayerFactory;
 import nl.tudelft.jpacman.multiplayers.ChoiceMonster;
 import nl.tudelft.jpacman.multiplayers.Classement;
@@ -170,14 +167,14 @@ public class Launcher {
 
 	}
 
-	private Player getSinglePlayer(final Game game) {
+	/*private Player getSinglePlayer(final Game game) {
 		List<Player> players = game.getPlayers();
 		if (players.isEmpty()) {
 			throw new IllegalArgumentException("Game has 0 players.");
 		}
 		final Player p1 = players.get(0);
 		return p1;
-	}
+	}*/
 
 	/**
 	 * Creates and starts a JPac-Man game.

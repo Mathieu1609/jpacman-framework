@@ -12,6 +12,6 @@ public class PlayerStrategy extends ControlStrategy{
 	}
 	public Direction nextMove()
 	{
-		return last_dir;
+		return lastdir;
 	}
 }
