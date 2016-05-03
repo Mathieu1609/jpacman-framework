@@ -119,4 +119,15 @@ public abstract class Ghost extends NPC
 		int i = new Random().nextInt(directions.size());
 		return directions.get(i);
 	}
+	protected Direction path (Square destination)
+	{
+		List<Direction> path = Navigation.shortestPath(getSquare(),
+				destination, this);
+		if (path != null && !path.isEmpty()) {
+			Direction d = path.get(0);
+			return d;
+		}
+		Direction direct = randomMove();
+		return direct;
+	}
 }

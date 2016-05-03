@@ -69,6 +69,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	 */
 	public void affplayer()
 	{
+		
 		if(numPlayer==0)
 			player.setText("Joueur 1, Veuillez chosir votre monstre");
 		else
@@ -106,15 +107,15 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		Object source = e.getSource();
 		
 		if(source.equals(pinky))
-		{
+		{numPlayer++;
 			((JComponent) source).setVisible(false); 
-			numPlayer++;
+			
 			affplayer();
 			jPinky=new Joueur("pinky",numPlayer,0);
 			listJ.add(jPinky);
 			if (numPlayer==j.getNbrJoueur())
 				{
-				l.launch();	this.setVisible(false);	
+				launchGame();
 				}
 		}
 		if(source.equals(clyde))
@@ -126,7 +127,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			listJ.add(jClyde);
 			if (numPlayer==j.getNbrJoueur())
 			{
-			l.launch();	this.setVisible(false);	
+				launchGame();
 			}
 		
 		}
@@ -139,7 +140,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			listJ.add(jInky);
 			if (numPlayer==j.getNbrJoueur())
 			{
-			l.launch();	this.setVisible(false);	
+				launchGame();
 			}
 		}
 		if(source.equals(blinky))
@@ -151,31 +152,34 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			listJ.add(jBlinky);
 			if (numPlayer==j.getNbrJoueur())
 			{
-			l.launch();	this.setVisible(false);	
+				launchGame();
 			}
 		}
 		
 		if(source.equals(twoPlayers))
 		{
-			appaerButtonGhost();
-			numPlayer=0;j.setNbrJoueur(2);
-			affplayer();
+			nbrJoueur(2);
 		}
 		if(source.equals(thirdPlayers))
 		{
-			appaerButtonGhost();
-			numPlayer=0;j.setNbrJoueur(3);
-			affplayer();
+			nbrJoueur(3);
 		}		
 		if(source.equals(fourPlayers))
 		{
-			appaerButtonGhost();
-			numPlayer=0;j.setNbrJoueur(4);
-			affplayer();
+			nbrJoueur(4);
 		}
 					
 	}
-
+	public void launchGame()
+	{
+		l.launch();	this.setVisible(false);	
+	}
+	public void nbrJoueur( int nbr)
+	{
+		appaerButtonGhost();
+		numPlayer=0;j.setNbrJoueur(nbr);
+		affplayer();
+	}
 	
 
 }

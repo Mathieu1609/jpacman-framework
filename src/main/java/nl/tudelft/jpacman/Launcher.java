@@ -120,7 +120,6 @@ public class Launcher {
 	protected PlayerFactory getPlayerFactory() {
 		return new PlayerFactory(getSpriteStore());
 	}
-
 	/**
 	 * Adds key events UP, DOWN, LEFT and RIGHT to a game.
 	 * 
@@ -132,41 +131,53 @@ public class Launcher {
 	protected void addSinglePlayerKeys(final PacManUiBuilder builder,
 			final Game game) {
 		builder.addKey(KeyEvent.VK_UP, new Action() {
-
 			@Override
 			public void doAction() {
-				ControlStrategy controls = game.getPacmanControls();
-				if (controls instanceof PlayerStrategy)
-					game.getPacmanControls().setDirection(Direction.NORTH);
+				direction(Direction.NORTH);
 			}
 		}).addKey(KeyEvent.VK_DOWN, new Action() {
 
 			@Override
 			public void doAction() {
-				ControlStrategy controls = game.getPacmanControls();
-				if (controls instanceof PlayerStrategy)
-					game.getPacmanControls().setDirection(Direction.SOUTH);
+				direction(Direction.SOUTH);
 			}
 		}).addKey(KeyEvent.VK_LEFT, new Action() {
 
 			@Override
 			public void doAction() {
-				ControlStrategy controls = game.getPacmanControls();
-				if (controls instanceof PlayerStrategy)
-					game.getPacmanControls().setDirection(Direction.WEST);
+				direction(Direction.WEST);
 			}
 		}).addKey(KeyEvent.VK_RIGHT, new Action() {
 
 			@Override
 			public void doAction() {
-				ControlStrategy controls = game.getPacmanControls();
-				if (controls instanceof PlayerStrategy)
-					game.getPacmanControls().setDirection(Direction.EAST);
+				direction(Direction.EAST);
 			}
 		});
 
 	}
-
+	public void direction(Direction d)
+	{
+		ControlStrategy controls = game.getPacmanControls();
+		if (controls instanceof PlayerStrategy) {
+			switch (d) {
+				case EAST:
+					game.getPacmanControls().setDirection(Direction.EAST);
+					break;
+				case WEST:
+					game.getPacmanControls().setDirection(Direction.WEST);
+					break;
+				case NORTH:
+					game.getPacmanControls().setDirection(Direction.NORTH);
+					break;
+				case SOUTH:
+					game.getPacmanControls().setDirection(Direction.SOUTH);
+					break;
+				default:
+					break;
+			}
+		}
+	}
 	/*private Player getSinglePlayer(final Game game) {
 		List<Player> players = game.getPlayers();
 		if (players.isEmpty()) {

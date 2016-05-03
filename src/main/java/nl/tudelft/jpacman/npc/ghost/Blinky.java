@@ -97,15 +97,9 @@ public class Blinky extends Ghost {
 			Direction direct = randomMove();
 			return direct;
 		}
-		
-		List<Direction> path = Navigation.shortestPath(getSquare(), target,
-				this);
-		if (path != null && !path.isEmpty()) {
-			Direction d = path.get(0);
-			return d;
-		}
-		Direction direct= randomMove();
-		return direct;
+
+		Direction d=path(target);
+		return d;
 	}
 
 

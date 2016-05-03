@@ -134,13 +134,7 @@ public class Inky extends Ghost {
 			destination = playerDestination.getSquareAt(d);
 		}
 
-		List<Direction> path = Navigation.shortestPath(getSquare(),
-				destination, this);
-		if (path != null && !path.isEmpty()) {
-			Direction d = path.get(0);
-			return d;
-		}
-		Direction d = randomMove();
+		Direction d=path(destination);
 		return d;
 	}
 	// CHECKSTYLE:ON
