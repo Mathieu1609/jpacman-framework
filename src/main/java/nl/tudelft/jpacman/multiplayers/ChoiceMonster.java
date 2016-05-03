@@ -18,7 +18,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	private JButton twoPlayers,thirdPlayers,fourPlayers;
 	private JButton blinky,clyde,inky,pinky;
 	private JLabel player;
-	private int numPlayer;
+	private int numPlayer=0;
 	private JPanel panel = new JPanel();
 	public Joueur jInky,jClyde,jPinky,jBlinky,j;
 	public ArrayList<Joueur>listJ=new ArrayList<Joueur>();
@@ -69,7 +69,10 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	 */
 	public void affplayer()
 	{
-	
+		
+		if(numPlayer==0)
+			player.setText("Joueur 1, Veuillez chosir votre monstre");
+		else
 		player.setText("Joueur "+ numPlayer +", Veuillez chosir votre monstre");
 		
 	}
@@ -104,13 +107,13 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 		Object source = e.getSource();
 		
 		if(source.equals(pinky))
-		{
+		{numPlayer++;
 			((JComponent) source).setVisible(false); 
-			numPlayer++;
+			
 			affplayer();
 			jPinky=new Joueur("pinky",numPlayer,0);
 			listJ.add(jPinky);
-			if (numPlayer==j.getNbrJoueur()+1)
+			if (numPlayer==j.getNbrJoueur())
 				{
 				launchGame();
 				}
@@ -122,7 +125,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			affplayer();
 			jClyde=new Joueur("clyde",numPlayer,0);
 			listJ.add(jClyde);
-			if (numPlayer==j.getNbrJoueur()+1)
+			if (numPlayer==j.getNbrJoueur())
 			{
 				launchGame();
 			}
@@ -135,7 +138,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			affplayer(); 
 			jInky=new Joueur("inky",numPlayer,0);
 			listJ.add(jInky);
-			if (numPlayer==j.getNbrJoueur()+1)
+			if (numPlayer==j.getNbrJoueur())
 			{
 				launchGame();
 			}
@@ -147,7 +150,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			affplayer(); 
 			jBlinky=new Joueur("blinky",numPlayer,0);
 			listJ.add(jBlinky);
-			if (numPlayer==j.getNbrJoueur()+1)
+			if (numPlayer==j.getNbrJoueur())
 			{
 				launchGame();
 			}
@@ -174,10 +177,8 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	public void nbrJoueur( int nbr)
 	{
 		appaerButtonGhost();
-		numPlayer=1;
+		numPlayer=0;j.setNbrJoueur(nbr);
 		affplayer();
-		j.setNbrJoueur(nbr);
-		
 	}
 	
 
