@@ -113,7 +113,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			affplayer();
 			jPinky=new Joueur("pinky",numPlayer,0);
 			listJ.add(jPinky);
-			if (numPlayer==j.getNbrJoueur())
+			if (numPlayer==j.getNbrJoueur()+1)
 				{
 				launchGame();
 				}
@@ -125,7 +125,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			affplayer();
 			jClyde=new Joueur("clyde",numPlayer,0);
 			listJ.add(jClyde);
-			if (numPlayer==j.getNbrJoueur())
+			if (numPlayer==j.getNbrJoueur()+1)
 			{
 				launchGame();
 			}
@@ -138,7 +138,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			affplayer(); 
 			jInky=new Joueur("inky",numPlayer,0);
 			listJ.add(jInky);
-			if (numPlayer==j.getNbrJoueur())
+			if (numPlayer==j.getNbrJoueur()+1)
 			{
 				launchGame();
 			}
@@ -150,7 +150,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 			affplayer(); 
 			jBlinky=new Joueur("blinky",numPlayer,0);
 			listJ.add(jBlinky);
-			if (numPlayer==j.getNbrJoueur())
+			if (numPlayer==j.getNbrJoueur()+1)
 			{
 				launchGame();
 			}
@@ -177,7 +177,7 @@ public class ChoiceMonster extends JFrame implements ActionListener {
 	public void nbrJoueur( int nbr)
 	{
 		appaerButtonGhost();
-		numPlayer=0;j.setNbrJoueur(nbr);
+		numPlayer=1;j.setNbrJoueur(nbr);
 		affplayer();
 	}
 	
