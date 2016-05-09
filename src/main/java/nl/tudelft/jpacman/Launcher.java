@@ -178,15 +178,7 @@ public class Launcher {
 			}
 		}
 	}
-	/*private Player getSinglePlayer(final Game game) {
-		List<Player> players = game.getPlayers();
-		if (players.isEmpty()) {
-			throw new IllegalArgumentException("Game has 0 players.");
-		}
-		final Player p1 = players.get(0);
-		return p1;
-	}*/
-
+	
 	/**
 	 * Creates and starts a JPac-Man game.
 	 */
